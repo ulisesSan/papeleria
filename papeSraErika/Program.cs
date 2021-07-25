@@ -14,6 +14,7 @@ namespace papeSraErika
         [STAThread]
         static void Main()
         {
+            systemQuerys.principalQuery("describe productos");
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Princial());

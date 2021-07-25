@@ -20,9 +20,11 @@ namespace papeSraErika
 
         private void table(string data)
         {
-            //List<object> lista = new List<object>();
+            List<object> lista = new List<object>();
             productController _products = new productController();
             productTable.DataSource = _products.Products(data);
         }
+
+        
     }
 }

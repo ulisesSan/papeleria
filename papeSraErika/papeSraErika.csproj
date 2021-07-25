@@ -126,6 +126,7 @@
     <None Include="Properties\DataSources\papeSraErika.Properties.Resources.datasource" />
     <None Include="Properties\DataSources\papeSraErika.Properties.Settings.datasource" />
     <None Include="Properties\DataSources\Princial.datasource" />
+    <None Include="Properties\DataSources\productMap.datasource" />
     <None Include="Properties\DataSources\productView.datasource" />
     <None Include="Properties\DataSources\Program.datasource" />
     <None Include="Properties\Settings.settings">
