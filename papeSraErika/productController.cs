@@ -1,8 +1,5 @@
-﻿using System;
+﻿
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 
 namespace papeSraErika
@@ -21,7 +18,8 @@ namespace papeSraErika
             }
             else
             {
-                pQuery = "select * from productos where ";
+                pQuery = "select * from Productos " +
+                "where NOMBRE LIKE '%" + data + "%' OR MARCA LIKE '%" + data + "%' OR CODIGO_BARRAS LIKE '%" + data + "%';";
             }
             reader = systemQuerys.dataTable(pQuery);
 

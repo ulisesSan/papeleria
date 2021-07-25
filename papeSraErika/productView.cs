@@ -31,5 +31,17 @@ namespace papeSraErika
 
             table(dato);
         }
+
+        private void textSearch_TextChanged(object sender, EventArgs e)
+        {
+            string dato = textSearch.Text;
+            table(dato);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            addProduct M = new addProduct();
+            M.Show();
+        }
     }
 }
