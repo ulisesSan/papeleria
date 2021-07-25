@@ -21,7 +21,7 @@ namespace papeSraErika
             }
             else
             {
-                pQuery = null;
+                pQuery = "select * from productos where ";
             }
             reader = systemQuerys.dataTable(pQuery);
 

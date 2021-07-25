@@ -25,6 +25,11 @@ namespace papeSraErika
             productTable.DataSource = _products.Products(data);
         }
 
-        
+        private void Buscar(object sender, EventArgs e)
+        {
+            string dato = textSearch.Text;
+
+            table(dato);
+        }
     }
 }
