@@ -17,7 +17,7 @@ namespace papeSraErika
             InitializeComponent();
         }
 
-        private void openForm<secondForm>() where secondForm : Form, new()
+        public void openForm<secondForm>() where secondForm : Form, new()
         {
             Form form;
             form = panelCenter.Controls.OfType<secondForm>().FirstOrDefault();
@@ -39,7 +39,7 @@ namespace papeSraErika
             }
         }
 
-        private void btnProduct_Click(object sender, EventArgs e)
+        public void btnProduct_Click(object sender, EventArgs e)
         {
             openForm<productView>();
         }
