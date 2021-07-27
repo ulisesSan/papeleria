@@ -52,9 +52,19 @@ namespace papeSraErika
 
         }
 
+
         private void button3_Click(object sender, EventArgs e)
         {
             Table(null);
+        }
+
+        private void editProduct_Click(object sender, EventArgs e)
+        {
+            string dato = productTable.CurrentRow.Cells[0].Value.ToString();
+            editProduct M = new editProduct();
+            M.dato = dato;
+            M.Show();
+
         }
     }
 }

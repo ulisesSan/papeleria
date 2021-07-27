@@ -67,3 +67,4 @@ D:\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.exe
 D:\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.pdb
 D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\papeSraErika.pdb
 D:\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.csproj.AssemblyReference.cache
+D:\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.editProduct.resources
