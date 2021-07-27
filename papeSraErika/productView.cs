@@ -60,9 +60,19 @@ namespace papeSraErika
 
         private void editProduct_Click(object sender, EventArgs e)
         {
-            string dato = productTable.CurrentRow.Cells[0].Value.ToString();
+            string barCode = productTable.CurrentRow.Cells[0].Value.ToString();
+            string name = productTable.CurrentRow.Cells[1].Value.ToString(); 
+            string brand = productTable.CurrentRow.Cells[2].Value.ToString();
+            string description = productTable.CurrentRow.Cells[3].Value.ToString();
+            string price = productTable.CurrentRow.Cells[4].Value.ToString();
+            string stock = productTable.CurrentRow.Cells[5].Value.ToString();
             editProduct M = new editProduct();
-            M.dato = dato;
+            M.barcode = barCode;
+            M.name = name;
+            M.brand = brand;
+            M.description = description;
+            M.price = price;
+            M.stock = stock;
             M.Show();
 
         }

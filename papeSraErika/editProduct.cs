@@ -12,7 +12,12 @@ namespace papeSraErika
 {
     public partial class editProduct : Form
     {
-        public string dato;
+        public string barcode;
+        public string name;
+        public string brand;
+        public string description;
+        public string price;
+        public string stock;
         public editProduct()
         {
             InitializeComponent();
@@ -20,7 +25,7 @@ namespace papeSraErika
 
         private void label1_Click(object sender, EventArgs e)
         {
-            label1.Text = "dato recibido" + dato;
+            label1.Text = "dato recibido" + barcode + name + brand + description + price + stock;
         }
     }
 }
