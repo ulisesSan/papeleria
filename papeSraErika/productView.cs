@@ -47,14 +47,14 @@ namespace papeSraErika
             M.Show();
         }
 
-        public void actualizar()
+        private void label1_Click(object sender, EventArgs e)
         {
-            Table(null);
+
         }
 
-        public interface updateTable
+        private void button3_Click(object sender, EventArgs e)
         {
-            void actualizar();
+            Table(null);
         }
     }
 }
