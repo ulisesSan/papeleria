@@ -56,7 +56,6 @@ D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\System.Buffers.xml
 D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\System.Memory.xml
 D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\System.Numerics.Vectors.xml
 D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-D:\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.csproj.AssemblyReference.cache
 D:\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.addProduct.resources
 D:\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.Princial.resources
 D:\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.productView.resources
@@ -67,3 +66,4 @@ D:\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.csproj.CopyComplete
 D:\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.exe
 D:\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.pdb
 D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\papeSraErika.pdb
+D:\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.csproj.AssemblyReference.cache

@@ -42,29 +42,38 @@ namespace papeSraErika
                 _product.Price1 = price.ToString();
                 _product.Stock1 = stock.ToString();
 
-                string insertProduct = "INSERT INTO productos(NOMBRE,MARCA,DESCRIPCION,CODIGO_BARRAS,STOCK,PRECIO)" +
-                "values('" + _product.ProductName + "','" + _product.Brand1 + "','" + _product.Description1 + "','" + _product.BarCode + "','" + _product.Price1 + "','" + _product.Stock1 + "');";
-                systemQuerys.principalQuery(insertProduct);
-
-                DialogResult sino = MessageBox.Show("Desea agregar otro producto", "Agregar otro producto", MessageBoxButtons.YesNo);
-                if (sino == DialogResult.Yes)
+                if(_product.BarCode.Length != 13)
                 {
-                    textCode.Text = "";
-                    textName.Text = "";
-                    textMarca.Text = "";
-                    textDescription.Text = "";
-                    textPrecio.Text = "";
-                    textStock.Text = "";
-                    textCode.ReadOnly = false;
+                    MessageBox.Show("Codigo de barras invalido", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                 {
-                    productView M = new productView();
-                    M.Refresh();
-                    this.Close();
+                    string insertProduct = "INSERT INTO productos(NOMBRE,MARCA,DESCRIPCION,CODIGO_BARRAS,STOCK,PRECIO)" +
+                "values('" + _product.ProductName + "','" + _product.Brand1 + "','" + _product.Description1 + "','" + _product.BarCode + "','" + _product.Price1 + "','" + _product.Stock1 + "');";
+                    systemQuerys.principalQuery(insertProduct);
+
+                    DialogResult sino = MessageBox.Show("Desea agregar otro producto", "Agregar otro producto", MessageBoxButtons.YesNo);
+                    if (sino == DialogResult.Yes)
+                    {
+                        textCode.Text = "";
+                        textName.Text = "";
+                        textMarca.Text = "";
+                        textDescription.Text = "";
+                        textPrecio.Text = "";
+                        textStock.Text = "";
+                        textCode.ReadOnly = false;
+                    }
+                    else
+                    {
+                        productView M = new productView();
+                        M.Refresh();
+                        this.Close();
+                    }
                 }
+                
             } catch(Exception) {
                 MessageBox.Show("Debe de ingresar solo numeros en Existencias y Precio");
+                textCode.ReadOnly = true;
             }
          
             
