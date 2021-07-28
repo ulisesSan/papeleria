@@ -43,5 +43,10 @@ namespace papeSraErika
         {
             openForm<productView>();
         }
+
+        public void updateForm()
+        {
+            openForm<productView>();
+        }
     }
 }

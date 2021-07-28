@@ -19,8 +19,6 @@ namespace papeSraErika
             Table(null);
         }
 
-
-
         public void Table(string data)
         {
             List<object> lista = new List<object>();
@@ -53,7 +51,7 @@ namespace papeSraErika
         }
 
 
-        private void button3_Click(object sender, EventArgs e)
+        public void button3_Click(object sender, EventArgs e)
         {
             Table(null);
         }
@@ -75,6 +73,27 @@ namespace papeSraErika
             M.stock = stock;
             M.Show();
 
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            string barcode = productTable.CurrentRow.Cells[0].Value.ToString();
+            string sql = "delete from productos where CODIGO_BARRAS = '" + barcode + "';";
+
+            DialogResult sino = MessageBox.Show("¿Esta seguro de elominar este producto?", "Agregar otro producto", MessageBoxButtons.YesNo);
+            if (sino == DialogResult.Yes)
+            {
+                systemQuerys.principalQuery(sql);
+                MessageBox.Show("Producto eliminado con exito");
+
+                Table(null);
+            }
+
+        }   
+
+        public void table2()
+        {
+            Table(null);
         }
     }
 }

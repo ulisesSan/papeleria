@@ -36,6 +36,7 @@ namespace papeSraErika
             _product.Description1 = textDescription.Text;
 
             try {
+                
                 price = float.Parse(textPrecio.Text);
                 stock = Int32.Parse(textStock.Text);
 
@@ -66,7 +67,8 @@ namespace papeSraErika
                     else
                     {
                         productView M = new productView();
-                        M.Refresh();
+                        var form = new productView();
+                        form.table2();
                         this.Close();
                     }
                 }
@@ -77,6 +79,11 @@ namespace papeSraErika
             }
          
             
+        }
+
+        private void M_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            throw new NotImplementedException();
         }
     }
 }
