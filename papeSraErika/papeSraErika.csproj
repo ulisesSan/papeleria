@@ -108,6 +108,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="papeShopView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="papeShopView.Designer.cs">
+      <DependentUpon>papeShopView.cs</DependentUpon>
+    </Compile>
     <Compile Include="productController.cs" />
     <Compile Include="productMap.cs" />
     <Compile Include="productView.cs">
@@ -127,6 +133,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="papeShopView.resx">
+      <DependentUpon>papeShopView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="productView.resx">
       <DependentUpon>productView.cs</DependentUpon>

@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace papeSraErika
@@ -76,14 +69,7 @@ namespace papeSraErika
             } catch(Exception) {
                 MessageBox.Show("Debe de ingresar solo numeros en Existencias y Precio");
                 textCode.ReadOnly = true;
-            }
-         
-            
-        }
-
-        private void M_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            throw new NotImplementedException();
+            }   
         }
     }
 }

@@ -34,7 +34,6 @@ namespace papeSraErika
 
         public void loadData()
         {
-            MessageBox.Show(barcode);
             textName.Text = name;
             textBrand.Text = brand1;
             textDesc.Text = desc;
@@ -49,7 +48,6 @@ namespace papeSraErika
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(barcode);
             string saveName = textName.Text;
             string saveBrand = textBrand.Text;
             string saveDesc = textDesc.Text;
@@ -60,6 +58,7 @@ namespace papeSraErika
                 ",PRECIO = '" + savePrice + "' where CODIGO_BARRAS = '" + barcode + "';";
 
             systemQuerys.principalQuery(sql);
+            
 
             this.Close();
 
