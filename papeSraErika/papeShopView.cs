@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace papeSraErika
 {
@@ -24,15 +18,42 @@ namespace papeSraErika
                 string code = textBox1.Text;
 
                 Table(code);
-            }  
+                textBox1.Text = "";
+            }
         }
         private void Table(string data)
         {
+            int bandera = 0;
+            string sql = "select * from productos where CODIGO_BARRAS = '" + data + "'";
+            string _list = null;
+            MySqlDataReader res = systemQuerys.dataTable(sql);
+            while (res.Read())
+            {
+                string stock = res.GetString(5);
+                if(stock == "0")
+                {
+                    MessageBox.Show("Este producto ya no tiene stock");
+                    bandera = 1;
 
-            List<object> lista = new List<object>();
-            shopController _shop = new shopController();
-            shopController lol = new shopController();
-            shopTable.DataSource = lol.shopQuery(data);
+                }
+                else
+                {
+                    _list = res.GetString(4);
+                    if(_list.Length != 13)
+                    {
+                        
+                    }
+                    _list += " " + res.GetString(1);
+                    _list += " " + res.GetString(6);
+                    listBox1.Items.Add(_list);
+                    bandera = 2;
+                }
+                
+            }
+            if(bandera == 0)
+            {
+                MessageBox.Show("Porducto no encontrado");
+            }
         }
     }
 }

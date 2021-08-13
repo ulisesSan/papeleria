@@ -12,7 +12,7 @@ namespace papeSraErika
 
         private void textCode_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if(e.KeyChar == (char)13)
+            if(e.KeyChar == (char)13 || e.KeyChar == (char)12)
             {
                 textCode.ReadOnly = true;
             }
@@ -20,8 +20,8 @@ namespace papeSraErika
 
         private void addBtn_Click(object sender, EventArgs e)
         {
-            float price;
-            int stock;
+            string price;
+            string stock;
             productMap _product = new productMap();
             _product.BarCode = textCode.Text;
             _product.ProductName = textName.Text;
@@ -29,21 +29,23 @@ namespace papeSraErika
             _product.Description1 = textDescription.Text;
 
             try {
-                
-                price = float.Parse(textPrecio.Text);
-                stock = Int32.Parse(textStock.Text);
+                int stock2 = int.Parse(textStock.Text);
+                float price2 = float.Parse(textPrecio.Text);
+                price = textPrecio.Text;
+                stock = textStock.Text;
+                MessageBox.Show(price + " " + stock);
 
                 _product.Price1 = price.ToString();
                 _product.Stock1 = stock.ToString();
 
-                if(_product.BarCode.Length != 13)
+                if(_product.BarCode.Length >= 14)
                 {
                     MessageBox.Show("Codigo de barras invalido", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                 {
                     string insertProduct = "INSERT INTO productos(NOMBRE,MARCA,DESCRIPCION,CODIGO_BARRAS,STOCK,PRECIO)" +
-                "values('" + _product.ProductName + "','" + _product.Brand1 + "','" + _product.Description1 + "','" + _product.BarCode + "','" + _product.Price1 + "','" + _product.Stock1 + "');";
+                "values('" + _product.ProductName + "','" + _product.Brand1 + "','" + _product.Description1 + "','" + _product.BarCode + "','" + _product.Stock1 + "','" + _product.Price1 + "');";
                     systemQuerys.principalQuery(insertProduct);
 
                     DialogResult sino = MessageBox.Show("Desea agregar otro producto", "Agregar otro producto", MessageBoxButtons.YesNo);

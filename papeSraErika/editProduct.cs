@@ -53,6 +53,7 @@ namespace papeSraErika
             string saveDesc = textDesc.Text;
             string savePrice = textPrice.Text;
             string saveStock = textStock.Text;
+            savePrice = savePrice.Replace(",", ".");
 
             string sql = "UPDATE productos set NOMBRE = '" + saveName + "',MARCA = '" + saveBrand + "',DESCRIPCION = '" + saveDesc + "',STOCK = '" + saveStock + "'" +
                 ",PRECIO = '" + savePrice + "' where CODIGO_BARRAS = '" + barcode + "';";

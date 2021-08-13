@@ -51,7 +51,7 @@ CREATE TABLE `productos` (
   `NOMBRE` varchar(30) DEFAULT NULL,
   `MARCA` varchar(30) DEFAULT NULL,
   `DESCRIPCION` text,
-  `CODIGO_BARRAS` int unsigned NOT NULL,
+  `CODIGO_BARRAS` bigint(13) unsigned NOT NULL,
   `STOCK` int unsigned DEFAULT NULL,
   `PRECIO` decimal(10,2) DEFAULT NULL,
   PRIMARY KEY (`ID_PRODUCTO`)
