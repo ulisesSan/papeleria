@@ -46,6 +46,7 @@ namespace papeSraErika
                     _list += " " + res.GetString(1);
                     _list += " " + res.GetString(6);
                     listBox1.Items.Add(_list);
+                    listBox1.SetSelected(0,true);
                     bandera = 2;
                 }
                 
@@ -62,12 +63,17 @@ namespace papeSraErika
             int data = listBox1.FindString(curItem);
             int numData = listBox1.Items.Count;
             MessageBox.Show(curItem + " " + data+" Numero de datos es"+numData);
-
+            //int numDato = listBox1.Length();
         }
 
         private void button2_Click(object sender, System.EventArgs e)
         {
             dataList();
+        }
+
+        private void btnCancelar_Click(object sender, System.EventArgs e)
+        {
+            listBox1.Items.Remove(listBox1.SelectedItem);
         }
     }
 }
