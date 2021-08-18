@@ -70,7 +70,8 @@ namespace papeSraErika
                 
             } catch(Exception) {
                 MessageBox.Show("Debe de ingresar solo numeros en Existencias y Precio");
-                textCode.ReadOnly = true;
+                textCode.ReadOnly = false;
+                textCode.Text = "";
             }   
         }
     }

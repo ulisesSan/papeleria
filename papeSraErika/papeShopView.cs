@@ -55,5 +55,19 @@ namespace papeSraErika
                 MessageBox.Show("Porducto no encontrado");
             }
         }
+
+        private void dataList()
+        {
+            string curItem = listBox1.SelectedItem.ToString();
+            int data = listBox1.FindString(curItem);
+            int numData = listBox1.Items.Count;
+            MessageBox.Show(curItem + " " + data+" Numero de datos es"+numData);
+
+        }
+
+        private void button2_Click(object sender, System.EventArgs e)
+        {
+            dataList();
+        }
     }
 }
