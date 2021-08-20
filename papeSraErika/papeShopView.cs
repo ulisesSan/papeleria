@@ -45,6 +45,9 @@ namespace papeSraErika
                     }
                     _list += " " + res.GetString(1);
                     _list += " " + res.GetString(6);
+                    string Precio = res.GetString(6);
+                    float precioSum = float.Parse(Precio.Replace(",",".")) + float.Parse(lblTotal.Text);
+                    lblTotal.Text = precioSum.ToString();
                     listBox1.Items.Add(_list);
                     listBox1.SetSelected(0,true);
                     bandera = 2;
@@ -74,6 +77,29 @@ namespace papeSraErika
         private void btnCancelar_Click(object sender, System.EventArgs e)
         {
             listBox1.Items.Remove(listBox1.SelectedItem);
+            selectItem();
+        }
+
+        private void btnCancelAll_Click(object sender, System.EventArgs e)
+        {
+            int numData = listBox1.Items.Count;
+            for(int i = 1; i <= numData; i++)
+            {
+                listBox1.Items.Remove(listBox1.SelectedItem);
+                selectItem();
+            }
+        }
+
+        private void selectItem()
+        {
+            try
+            {
+                listBox1.SetSelected(0, true);
+            }
+            catch
+            {
+
+            }
         }
     }
 }
