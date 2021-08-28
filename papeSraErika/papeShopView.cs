@@ -60,18 +60,23 @@ namespace papeSraErika
             }
         }
 
-        private void dataList()
-        {
-            string curItem = listBox1.SelectedItem.ToString();
-            int data = listBox1.FindString(curItem);
-            int numData = listBox1.Items.Count;
-            MessageBox.Show(curItem + " " + data+" Numero de datos es"+numData);
-            //int numDato = listBox1.Length();
-        }
-
         private void button2_Click(object sender, System.EventArgs e)
         {
-            dataList();
+            string codigo = null;
+            string curItem = listBox1.SelectedItem.ToString();
+            string curItem2 = curItem;
+            int data = listBox1.FindString(curItem);
+           
+            for(int i=0; i <= curItem.Length-1; i++)
+            {
+               
+                
+            }
+           
+                
+            
+            int numData = listBox1.Items.Count;
+            MessageBox.Show(curItem + " " + data + " Numero de datos es" + numData + " y lo que recibe de curItem es" + codigo );
         }
 
         private void btnCancelar_Click(object sender, System.EventArgs e)
