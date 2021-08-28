@@ -33,8 +33,6 @@ namespace papeSraErika
                 float price2 = float.Parse(textPrecio.Text);
                 price = textPrecio.Text;
                 stock = textStock.Text;
-                MessageBox.Show(price + " " + stock);
-
                 _product.Price1 = price.ToString();
                 _product.Stock1 = stock.ToString();
 
@@ -58,6 +56,7 @@ namespace papeSraErika
                         textPrecio.Text = "";
                         textStock.Text = "";
                         textCode.ReadOnly = false;
+                        textCode.SelectionStart = 0;
                     }
                     else
                     {
