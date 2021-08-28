@@ -96,7 +96,7 @@ namespace papeSraErika
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 46);
             this.button2.TabIndex = 7;
-            this.button2.Text = "Aceptar";
+            this.button2.Text = "Realizar Compra";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
