@@ -62,21 +62,10 @@ namespace papeSraErika
 
         private void button2_Click(object sender, System.EventArgs e)
         {
-            string codigo = null;
             string curItem = listBox1.SelectedItem.ToString();
-            string curItem2 = curItem;
-            int data = listBox1.FindString(curItem);
-           
-            for(int i=0; i <= curItem.Length-1; i++)
-            {
-               
-                
-            }
-           
-                
-            
+            string[] codigo = curItem.Split(' ');
             int numData = listBox1.Items.Count;
-            MessageBox.Show(curItem + " " + data + " Numero de datos es" + numData + " y lo que recibe de curItem es" + codigo );
+            MessageBox.Show(curItem + "  Numero de datos es" + numData + " y lo que recibe de curItem es " + codigo[0] );
         }
 
         private void btnCancelar_Click(object sender, System.EventArgs e)
