@@ -44,7 +44,7 @@ namespace papeSraErika
                         
                     }
                     _list += " " + res.GetString(1);
-                    _list += " " + res.GetString(6);
+                    _list += " $ " + res.GetString(6);
                     string Precio = res.GetString(6);
                     float precioSum = float.Parse(Precio.Replace(",",".")) + float.Parse(lblTotal.Text);
                     lblTotal.Text = precioSum.ToString();
@@ -62,10 +62,27 @@ namespace papeSraErika
 
         private void button2_Click(object sender, System.EventArgs e)
         {
-            string curItem = listBox1.SelectedItem.ToString();
-            string[] codigo = curItem.Split(' ');
             int numData = listBox1.Items.Count;
-            MessageBox.Show(curItem + "  Numero de datos es" + numData + " y lo que recibe de curItem es " + codigo[0] );
+            int id_venta;
+            string curItem;
+            int id_prod;
+            systemQuerys.principalQuery("insert into ventas(TOTAL) values('" + lblTotal.Text + "')");
+
+            for (int i = 1; i <= numData; i++)
+            {
+                try
+                {
+                    curItem = listBox1.SelectedItem.ToString();
+                    string[] codigo = curItem.Split(' ');
+                    id_venta = int.Parse(systemQuerys.principalQuery("select max(id) from ventas"));
+                    id_prod = int.Parse(systemQuerys.principalQuery("select ID_PRODUCTO from productos where CODIGO_BARRAS = '" + codigo[0] + "'"));
+                    systemQuerys.principalQuery("insert into descripcion_venta(ID_PRD,ID_VENTA,CANTIDAD,SUBTOTAL)" +
+                        " values('" + id_prod + "','" + id_venta + "',1,'" + codigo[3] + "')");
+                    listBox1.Items.Remove(listBox1.SelectedItem);
+                    selectItem();
+                }
+                catch { }
+            }
         }
 
         private void btnCancelar_Click(object sender, System.EventArgs e)
