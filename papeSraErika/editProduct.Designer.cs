@@ -172,6 +172,7 @@ namespace papeSraErika
             this.Controls.Add(this.Nombre);
             this.Name = "editProduct";
             this.Text = "editProduct";
+            this.Load += new System.EventHandler(this.editProduct_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

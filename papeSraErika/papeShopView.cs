@@ -68,6 +68,9 @@ namespace papeSraErika
             int id_prod;
             systemQuerys.principalQuery("insert into ventas(TOTAL) values('" + lblTotal.Text + "')");
 
+            Cambio M = new Cambio(lblTotal.Text);
+            M.Show();
+
             for (int i = 1; i <= numData; i++)
             {
                 try
@@ -78,8 +81,10 @@ namespace papeSraErika
                     id_prod = int.Parse(systemQuerys.principalQuery("select ID_PRODUCTO from productos where CODIGO_BARRAS = '" + codigo[0] + "'"));
                     systemQuerys.principalQuery("insert into descripcion_venta(ID_PRD,ID_VENTA,CANTIDAD,SUBTOTAL)" +
                         " values('" + id_prod + "','" + id_venta + "',1,'" + codigo[3] + "')");
+                    systemQuerys.principalQuery("update productos set STOCK = STOCK - '1' where CODIGO_BARRAS='" + codigo[0] + "'");
                     listBox1.Items.Remove(listBox1.SelectedItem);
                     selectItem();
+                    lblTotal.Text = "0";
                 }
                 catch { }
             }

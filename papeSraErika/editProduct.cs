@@ -69,5 +69,10 @@ namespace papeSraErika
         {
             this.Close();
         }
+
+        private void editProduct_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
