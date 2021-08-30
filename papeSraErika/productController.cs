@@ -14,7 +14,7 @@ namespace papeSraErika
             if (data == null)
             {
                 pQuery = "select * from Productos";
-            }
+            } 
             else
             {
                 pQuery = "select * from Productos " +

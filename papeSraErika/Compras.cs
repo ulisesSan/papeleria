@@ -10,15 +10,11 @@ using System.Windows.Forms;
 
 namespace papeSraErika
 {
-    public partial class Cambio : Form
+    public partial class Compras : Form
     {
-        string _total = null;
-        public Cambio(string total)
+        public Compras()
         {
             InitializeComponent();
-            total = _total;
-
-            Total.Text = total;
         }
     }
 }
