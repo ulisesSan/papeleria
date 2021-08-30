@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 
@@ -9,6 +10,7 @@ namespace papeSraErika
         public papeShopView()
         {
             InitializeComponent();
+            checkCambio();
         }
 
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
@@ -68,9 +70,6 @@ namespace papeSraErika
             int id_prod;
             systemQuerys.principalQuery("insert into ventas(TOTAL) values('" + lblTotal.Text + "')");
 
-            Cambio M = new Cambio(lblTotal.Text);
-            M.Show();
-
             for (int i = 1; i <= numData; i++)
             {
                 try
@@ -86,7 +85,9 @@ namespace papeSraErika
                     selectItem();
                     lblTotal.Text = "0";
                 }
-                catch { }
+                catch(Exception a) {
+                    MessageBox.Show(a.ToString());
+                }
             }
         }
 
@@ -115,6 +116,25 @@ namespace papeSraErika
             catch
             {
 
+            }
+        }
+
+        private void checkCambio()
+        {
+            lblCambio.Text = "0";
+        }
+
+        private void txtCambio_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                float total = float.Parse(lblTotal.Text);
+                float intro = float.Parse(txtCambio.Text);
+                float cambio = total - intro;
+                lblCambio.Text = cambio.ToString();
+            }
+            catch {
+                lblCambio.Text = "0";
             }
         }
     }

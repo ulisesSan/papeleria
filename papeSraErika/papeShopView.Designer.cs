@@ -38,6 +38,10 @@ namespace papeSraErika
             this.btnCancelar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.lblTotal = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtCambio = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.lblCambio = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -54,7 +58,7 @@ namespace papeSraErika
             // 
             this.textBox1.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.HideSelection = false;
-            this.textBox1.Location = new System.Drawing.Point(127, 448);
+            this.textBox1.Location = new System.Drawing.Point(127, 423);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(126, 29);
             this.textBox1.TabIndex = 2;
@@ -74,7 +78,7 @@ namespace papeSraErika
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(50, 451);
+            this.label3.Location = new System.Drawing.Point(50, 429);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(71, 23);
             this.label3.TabIndex = 5;
@@ -130,11 +134,53 @@ namespace papeSraErika
             this.lblTotal.TabIndex = 10;
             this.lblTotal.Text = "0";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(51, 468);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(64, 23);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "Cambio";
+            // 
+            // txtCambio
+            // 
+            this.txtCambio.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCambio.Location = new System.Drawing.Point(127, 462);
+            this.txtCambio.Name = "txtCambio";
+            this.txtCambio.Size = new System.Drawing.Size(100, 29);
+            this.txtCambio.TabIndex = 12;
+            this.txtCambio.TextChanged += new System.EventHandler(this.txtCambio_TextChanged);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(233, 465);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(19, 23);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "$";
+            // 
+            // lblCambio
+            // 
+            this.lblCambio.AutoSize = true;
+            this.lblCambio.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCambio.Location = new System.Drawing.Point(253, 465);
+            this.lblCambio.Name = "lblCambio";
+            this.lblCambio.Size = new System.Drawing.Size(0, 23);
+            this.lblCambio.TabIndex = 14;
+            // 
             // papeShopView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1063, 561);
+            this.Controls.Add(this.lblCambio);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.txtCambio);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnCancelar);
@@ -163,5 +209,9 @@ namespace papeSraErika
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblTotal;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtCambio;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblCambio;
     }
 }
