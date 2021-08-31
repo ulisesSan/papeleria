@@ -30,10 +30,10 @@ namespace papeSraErika
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.Venta = new System.Windows.Forms.Button();
             this.btnProduct = new System.Windows.Forms.Button();
             this.panelCenter = new System.Windows.Forms.Panel();
-            this.Venta = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,6 +47,26 @@ namespace papeSraErika
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(183, 561);
             this.panel1.TabIndex = 0;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(39, 274);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(114, 50);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "Ventas Realizadas";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // Venta
+            // 
+            this.Venta.Location = new System.Drawing.Point(39, 70);
+            this.Venta.Name = "Venta";
+            this.Venta.Size = new System.Drawing.Size(114, 50);
+            this.Venta.TabIndex = 2;
+            this.Venta.Text = "Ventas";
+            this.Venta.UseVisualStyleBackColor = true;
+            this.Venta.Click += new System.EventHandler(this.Venta_Click);
             // 
             // btnProduct
             // 
@@ -65,25 +85,6 @@ namespace papeSraErika
             this.panelCenter.Name = "panelCenter";
             this.panelCenter.Size = new System.Drawing.Size(1063, 561);
             this.panelCenter.TabIndex = 1;
-            // 
-            // Venta
-            // 
-            this.Venta.Location = new System.Drawing.Point(39, 70);
-            this.Venta.Name = "Venta";
-            this.Venta.Size = new System.Drawing.Size(114, 50);
-            this.Venta.TabIndex = 2;
-            this.Venta.Text = "Ventas";
-            this.Venta.UseVisualStyleBackColor = true;
-            this.Venta.Click += new System.EventHandler(this.Venta_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(39, 274);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(114, 50);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Productos";
-            this.button2.UseVisualStyleBackColor = true;
             // 
             // Princial
             // 

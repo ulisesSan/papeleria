@@ -17,7 +17,7 @@ namespace papeSraErika
 
             if (data == null)
             {
-                pQuery = "select ID, FECHA,";
+                pQuery = "select * from ventas";
             }
             else
             {
@@ -32,7 +32,6 @@ namespace papeSraErika
 
                 _compra.Id_venta = int.Parse(reader.GetString(0));
                 _compra.Fecha_venta = reader.GetString(1);
-                _compra.Num_prod = int.Parse(reader.GetString(2));
                 _compra.Total = float.Parse(reader.GetString(3));
                 _list.Add(_compra);
                 

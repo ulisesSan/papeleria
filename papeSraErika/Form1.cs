@@ -53,5 +53,10 @@ namespace papeSraErika
         {
             openForm<papeShopView>();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            openForm<Compras>();
+        }
     }
 }

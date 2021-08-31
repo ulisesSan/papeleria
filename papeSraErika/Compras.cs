@@ -15,6 +15,14 @@ namespace papeSraErika
         public Compras()
         {
             InitializeComponent();
+            Tabla(null);
+        }
+
+        private void Tabla(string Data)
+        {
+            List<object> lista = new List<object>();
+            ventaControlador _ventas = new ventaControlador();
+            DataTableVenta.DataSource = _ventas.Venta(Data);
         }
     }
 }
