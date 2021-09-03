@@ -24,5 +24,16 @@ namespace papeSraErika
             ventaControlador _ventas = new ventaControlador();
             DataTableVenta.DataSource = _ventas.Venta(Data);
         }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            Tabla(null);
+        }
+
+        private void btnDetalle_Click(object sender, EventArgs e)
+        {
+            detalleCompra M = new detalleCompra();
+            M.Show();
+        }
     }
 }

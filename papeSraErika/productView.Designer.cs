@@ -31,13 +31,6 @@ namespace papeSraErika
         {
             this.components = new System.ComponentModel.Container();
             this.productTable = new System.Windows.Forms.DataGridView();
-            this.barCodeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.brand1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.description1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.price1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.stock1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productMapBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.button1 = new System.Windows.Forms.Button();
             this.editProduct = new System.Windows.Forms.Button();
             this.textSearch = new System.Windows.Forms.TextBox();
@@ -45,6 +38,13 @@ namespace papeSraErika
             this.button3 = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
+            this.barCodeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.brand1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.description1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.price1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.stock1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productMapBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.productTable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productMapBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -55,7 +55,7 @@ namespace papeSraErika
             this.productTable.AllowUserToDeleteRows = false;
             this.productTable.AutoGenerateColumns = false;
             this.productTable.BackgroundColor = System.Drawing.Color.WhiteSmoke;
-            this.productTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.productTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.productTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.barCodeDataGridViewTextBoxColumn,
             this.productNameDataGridViewTextBoxColumn,
@@ -70,70 +70,6 @@ namespace papeSraErika
             this.productTable.RowHeadersVisible = false;
             this.productTable.Size = new System.Drawing.Size(763, 389);
             this.productTable.TabIndex = 0;
-            // 
-            // barCodeDataGridViewTextBoxColumn
-            // 
-            this.barCodeDataGridViewTextBoxColumn.DataPropertyName = "BarCode";
-            this.barCodeDataGridViewTextBoxColumn.Frozen = true;
-            this.barCodeDataGridViewTextBoxColumn.HeaderText = "Codigo";
-            this.barCodeDataGridViewTextBoxColumn.Name = "barCodeDataGridViewTextBoxColumn";
-            this.barCodeDataGridViewTextBoxColumn.ReadOnly = true;
-            this.barCodeDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.barCodeDataGridViewTextBoxColumn.Width = 120;
-            // 
-            // productNameDataGridViewTextBoxColumn
-            // 
-            this.productNameDataGridViewTextBoxColumn.DataPropertyName = "ProductName";
-            this.productNameDataGridViewTextBoxColumn.Frozen = true;
-            this.productNameDataGridViewTextBoxColumn.HeaderText = "Nombre Del Producto";
-            this.productNameDataGridViewTextBoxColumn.Name = "productNameDataGridViewTextBoxColumn";
-            this.productNameDataGridViewTextBoxColumn.ReadOnly = true;
-            this.productNameDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.productNameDataGridViewTextBoxColumn.Width = 120;
-            // 
-            // brand1DataGridViewTextBoxColumn
-            // 
-            this.brand1DataGridViewTextBoxColumn.DataPropertyName = "Brand1";
-            this.brand1DataGridViewTextBoxColumn.Frozen = true;
-            this.brand1DataGridViewTextBoxColumn.HeaderText = "Marca";
-            this.brand1DataGridViewTextBoxColumn.Name = "brand1DataGridViewTextBoxColumn";
-            this.brand1DataGridViewTextBoxColumn.ReadOnly = true;
-            this.brand1DataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.brand1DataGridViewTextBoxColumn.Width = 120;
-            // 
-            // description1DataGridViewTextBoxColumn
-            // 
-            this.description1DataGridViewTextBoxColumn.DataPropertyName = "Description1";
-            this.description1DataGridViewTextBoxColumn.Frozen = true;
-            this.description1DataGridViewTextBoxColumn.HeaderText = "Descripción";
-            this.description1DataGridViewTextBoxColumn.Name = "description1DataGridViewTextBoxColumn";
-            this.description1DataGridViewTextBoxColumn.ReadOnly = true;
-            this.description1DataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.description1DataGridViewTextBoxColumn.Width = 160;
-            // 
-            // price1DataGridViewTextBoxColumn
-            // 
-            this.price1DataGridViewTextBoxColumn.DataPropertyName = "Price1";
-            this.price1DataGridViewTextBoxColumn.Frozen = true;
-            this.price1DataGridViewTextBoxColumn.HeaderText = "Precio";
-            this.price1DataGridViewTextBoxColumn.Name = "price1DataGridViewTextBoxColumn";
-            this.price1DataGridViewTextBoxColumn.ReadOnly = true;
-            this.price1DataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.price1DataGridViewTextBoxColumn.Width = 120;
-            // 
-            // stock1DataGridViewTextBoxColumn
-            // 
-            this.stock1DataGridViewTextBoxColumn.DataPropertyName = "Stock1";
-            this.stock1DataGridViewTextBoxColumn.Frozen = true;
-            this.stock1DataGridViewTextBoxColumn.HeaderText = "Existencias";
-            this.stock1DataGridViewTextBoxColumn.Name = "stock1DataGridViewTextBoxColumn";
-            this.stock1DataGridViewTextBoxColumn.ReadOnly = true;
-            this.stock1DataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.stock1DataGridViewTextBoxColumn.Width = 120;
-            // 
-            // productMapBindingSource
-            // 
-            this.productMapBindingSource.DataSource = typeof(papeSraErika.productMap);
             // 
             // button1
             // 
@@ -204,6 +140,70 @@ namespace papeSraErika
             this.label3.Size = new System.Drawing.Size(137, 31);
             this.label3.TabIndex = 8;
             this.label3.Text = "Productos";
+            // 
+            // barCodeDataGridViewTextBoxColumn
+            // 
+            this.barCodeDataGridViewTextBoxColumn.DataPropertyName = "BarCode";
+            this.barCodeDataGridViewTextBoxColumn.Frozen = true;
+            this.barCodeDataGridViewTextBoxColumn.HeaderText = "Codigo";
+            this.barCodeDataGridViewTextBoxColumn.Name = "barCodeDataGridViewTextBoxColumn";
+            this.barCodeDataGridViewTextBoxColumn.ReadOnly = true;
+            this.barCodeDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.barCodeDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // productNameDataGridViewTextBoxColumn
+            // 
+            this.productNameDataGridViewTextBoxColumn.DataPropertyName = "ProductName";
+            this.productNameDataGridViewTextBoxColumn.Frozen = true;
+            this.productNameDataGridViewTextBoxColumn.HeaderText = "Nombre Del Producto";
+            this.productNameDataGridViewTextBoxColumn.Name = "productNameDataGridViewTextBoxColumn";
+            this.productNameDataGridViewTextBoxColumn.ReadOnly = true;
+            this.productNameDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.productNameDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // brand1DataGridViewTextBoxColumn
+            // 
+            this.brand1DataGridViewTextBoxColumn.DataPropertyName = "Brand1";
+            this.brand1DataGridViewTextBoxColumn.Frozen = true;
+            this.brand1DataGridViewTextBoxColumn.HeaderText = "Marca";
+            this.brand1DataGridViewTextBoxColumn.Name = "brand1DataGridViewTextBoxColumn";
+            this.brand1DataGridViewTextBoxColumn.ReadOnly = true;
+            this.brand1DataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.brand1DataGridViewTextBoxColumn.Width = 120;
+            // 
+            // description1DataGridViewTextBoxColumn
+            // 
+            this.description1DataGridViewTextBoxColumn.DataPropertyName = "Description1";
+            this.description1DataGridViewTextBoxColumn.Frozen = true;
+            this.description1DataGridViewTextBoxColumn.HeaderText = "Descripción";
+            this.description1DataGridViewTextBoxColumn.Name = "description1DataGridViewTextBoxColumn";
+            this.description1DataGridViewTextBoxColumn.ReadOnly = true;
+            this.description1DataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.description1DataGridViewTextBoxColumn.Width = 160;
+            // 
+            // price1DataGridViewTextBoxColumn
+            // 
+            this.price1DataGridViewTextBoxColumn.DataPropertyName = "Price1";
+            this.price1DataGridViewTextBoxColumn.Frozen = true;
+            this.price1DataGridViewTextBoxColumn.HeaderText = "Precio";
+            this.price1DataGridViewTextBoxColumn.Name = "price1DataGridViewTextBoxColumn";
+            this.price1DataGridViewTextBoxColumn.ReadOnly = true;
+            this.price1DataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.price1DataGridViewTextBoxColumn.Width = 120;
+            // 
+            // stock1DataGridViewTextBoxColumn
+            // 
+            this.stock1DataGridViewTextBoxColumn.DataPropertyName = "Stock1";
+            this.stock1DataGridViewTextBoxColumn.Frozen = true;
+            this.stock1DataGridViewTextBoxColumn.HeaderText = "Existencias";
+            this.stock1DataGridViewTextBoxColumn.Name = "stock1DataGridViewTextBoxColumn";
+            this.stock1DataGridViewTextBoxColumn.ReadOnly = true;
+            this.stock1DataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.stock1DataGridViewTextBoxColumn.Width = 120;
+            // 
+            // productMapBindingSource
+            // 
+            this.productMapBindingSource.DataSource = typeof(papeSraErika.productMap);
             // 
             // productView
             // 
