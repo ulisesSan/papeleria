@@ -47,11 +47,11 @@ DROP TABLE IF EXISTS `productos`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `productos` (
-  `ID_PRODUCTO` int unsigned NOT NULL AUTO_INCREMENT,
+  `ID_PRODUCTO` int NOT NULL AUTO_INCREMENT,
   `NOMBRE` varchar(30) DEFAULT NULL,
   `MARCA` varchar(30) DEFAULT NULL,
   `DESCRIPCION` text,
-  `CODIGO_BARRAS` text(13) unsigned NOT NULL,
+  `CODIGO_BARRAS` text(13) NOT NULL,
   `STOCK` int unsigned DEFAULT NULL,
   `PRECIO` decimal(10,2) DEFAULT NULL,
   PRIMARY KEY (`ID_PRODUCTO`)

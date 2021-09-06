@@ -109,3 +109,5 @@ C:\Users\Ulises Caceres\Documents\GitHub\sraEricaPape\papeSraErika\obj\Debug\pap
 C:\Users\Ulises Caceres\Documents\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.exe
 C:\Users\Ulises Caceres\Documents\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.pdb
 C:\Users\Ulises Caceres\Documents\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.detalleCompra.resources
+D:\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.detalleCompra.resources
+D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\MySqlBackup.dll

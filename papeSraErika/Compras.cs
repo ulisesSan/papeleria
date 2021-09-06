@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace papeSraErika
 {
@@ -35,5 +36,29 @@ namespace papeSraErika
             detalleCompra M = new detalleCompra();
             M.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            copia();
+        }
+
+       private void copia()
+       {
+            string constring = "server=localhost;user=root;pwd=root;database=papeleria;";
+            string file = "C:\\Users\\Ulises Caceres\\Desktop\\backup.sql";
+            using (MySqlConnection conn = new MySqlConnection(constring))
+            {
+                using (MySqlCommand cmd = new MySqlCommand())
+                {
+                    using (MySqlBackup mb = new MySqlBackup(cmd))
+                    {
+                        cmd.Connection = conn;
+                        conn.Open();
+                        mb.ExportToFile(file);
+                        conn.Close();
+                    }
+                }
+            }
+       }
     }
 }
