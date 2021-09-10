@@ -32,44 +32,7 @@ C:\Users\Ulises Santiago\source\repos\papeSraErika\papeSraErika\bin\Debug\System
 C:\Users\Ulises Santiago\source\repos\papeSraErika\papeSraErika\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\Ulises Santiago\source\repos\papeSraErika\papeSraErika\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\Ulises Santiago\source\repos\papeSraErika\papeSraErika\obj\Debug\papeSraErika.csproj.CopyComplete
-D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\papeSraErika.exe.config
 D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\papeSraErika.exe
-D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\papeSraErika.pdb
-D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\BouncyCastle.Crypto.dll
-D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\Google.Protobuf.dll
-D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\K4os.Compression.LZ4.dll
-D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\K4os.Compression.LZ4.Streams.dll
-D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\K4os.Hash.xxHash.dll
-D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\MySql.Data.dll
-D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\System.Buffers.dll
-D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\System.Memory.dll
-D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\System.Numerics.Vectors.dll
-D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
-D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\Ubiety.Dns.Core.dll
-D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\Zstandard.Net.dll
-D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\Google.Protobuf.pdb
-D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\Google.Protobuf.xml
-D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\K4os.Compression.LZ4.xml
-D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\K4os.Compression.LZ4.Streams.xml
-D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\K4os.Hash.xxHash.xml
-D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\MySql.Data.xml
-D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\System.Buffers.xml
-D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\System.Memory.xml
-D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\System.Numerics.Vectors.xml
-D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-D:\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.csproj.AssemblyReference.cache
-D:\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.addProduct.resources
-D:\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.editProduct.resources
-D:\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.Princial.resources
-D:\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.papeShopView.resources
-D:\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.productView.resources
-D:\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.Properties.Resources.resources
-D:\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.csproj.GenerateResource.cache
-D:\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.csproj.CoreCompileInputs.cache
-D:\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.csproj.CopyComplete
-D:\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.exe
-D:\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.pdb
-D:\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.Compras.resources
 C:\Users\Ulises Caceres\Documents\GitHub\sraEricaPape\papeSraErika\bin\Debug\papeSraErika.exe.config
 C:\Users\Ulises Caceres\Documents\GitHub\sraEricaPape\papeSraErika\bin\Debug\papeSraErika.exe
 C:\Users\Ulises Caceres\Documents\GitHub\sraEricaPape\papeSraErika\bin\Debug\papeSraErika.pdb
@@ -109,5 +72,42 @@ C:\Users\Ulises Caceres\Documents\GitHub\sraEricaPape\papeSraErika\obj\Debug\pap
 C:\Users\Ulises Caceres\Documents\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.exe
 C:\Users\Ulises Caceres\Documents\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.pdb
 C:\Users\Ulises Caceres\Documents\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.detalleCompra.resources
-D:\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.detalleCompra.resources
+D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\papeSraErika.exe.config
+D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\BouncyCastle.Crypto.dll
+D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\Google.Protobuf.dll
+D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\K4os.Compression.LZ4.dll
+D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\K4os.Hash.xxHash.dll
+D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\MySql.Data.dll
 D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\MySqlBackup.dll
+D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\System.Buffers.dll
+D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\System.Memory.dll
+D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\System.Numerics.Vectors.dll
+D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\Ubiety.Dns.Core.dll
+D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\Zstandard.Net.dll
+D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\Google.Protobuf.pdb
+D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\Google.Protobuf.xml
+D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\K4os.Compression.LZ4.xml
+D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\K4os.Hash.xxHash.xml
+D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\MySql.Data.xml
+D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\System.Buffers.xml
+D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\System.Memory.xml
+D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\System.Numerics.Vectors.xml
+D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.addProduct.resources
+D:\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.Compras.resources
+D:\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.detalleCompra.resources
+D:\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.editProduct.resources
+D:\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.Princial.resources
+D:\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.papeShopView.resources
+D:\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.productView.resources
+D:\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.Properties.Resources.resources
+D:\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.csproj.GenerateResource.cache
+D:\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.csproj.CoreCompileInputs.cache
+D:\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.csproj.CopyComplete
+D:\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.exe
+D:\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.pdb
+D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\papeSraErika.pdb
+D:\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.csproj.AssemblyReference.cache

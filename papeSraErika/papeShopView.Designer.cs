@@ -37,11 +37,11 @@ namespace papeSraErika
             this.button2 = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.lblTotal = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txtCambio = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.lblCambio = new System.Windows.Forms.Label();
+            this.lblTotal = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -124,16 +124,6 @@ namespace papeSraErika
             this.label2.TabIndex = 9;
             this.label2.Text = "Total: $";
             // 
-            // lblTotal
-            // 
-            this.lblTotal.AutoSize = true;
-            this.lblTotal.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotal.Location = new System.Drawing.Point(831, 461);
-            this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(21, 22);
-            this.lblTotal.TabIndex = 10;
-            this.lblTotal.Text = "0";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -172,16 +162,26 @@ namespace papeSraErika
             this.lblCambio.Size = new System.Drawing.Size(0, 23);
             this.lblCambio.TabIndex = 14;
             // 
+            // lblTotal
+            // 
+            this.lblTotal.AutoSize = true;
+            this.lblTotal.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotal.Location = new System.Drawing.Point(844, 461);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(19, 23);
+            this.lblTotal.TabIndex = 15;
+            this.lblTotal.Text = "0";
+            // 
             // papeShopView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1063, 561);
+            this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.lblCambio);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtCambio);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.button2);
@@ -208,10 +208,10 @@ namespace papeSraErika
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label lblTotal;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtCambio;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lblCambio;
+        private System.Windows.Forms.Label lblTotal;
     }
 }

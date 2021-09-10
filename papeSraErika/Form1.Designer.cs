@@ -34,11 +34,14 @@ namespace papeSraErika
             this.Venta = new System.Windows.Forms.Button();
             this.btnProduct = new System.Windows.Forms.Button();
             this.panelCenter = new System.Windows.Forms.Panel();
+            this.lblTime = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            this.panelCenter.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.SystemColors.Highlight;
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.Venta);
             this.panel1.Controls.Add(this.btnProduct);
@@ -50,6 +53,11 @@ namespace papeSraErika
             // 
             // button2
             // 
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.ForeColor = System.Drawing.Color.Transparent;
+            this.button2.Image = global::papeSraErika.Properties.Resources.Azul;
             this.button2.Location = new System.Drawing.Point(39, 274);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(114, 50);
@@ -60,6 +68,11 @@ namespace papeSraErika
             // 
             // Venta
             // 
+            this.Venta.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Venta.FlatAppearance.BorderSize = 0;
+            this.Venta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Venta.ForeColor = System.Drawing.Color.Transparent;
+            this.Venta.Image = global::papeSraErika.Properties.Resources.Azul;
             this.Venta.Location = new System.Drawing.Point(39, 70);
             this.Venta.Name = "Venta";
             this.Venta.Size = new System.Drawing.Size(114, 50);
@@ -70,6 +83,13 @@ namespace papeSraErika
             // 
             // btnProduct
             // 
+            this.btnProduct.BackgroundImage = global::papeSraErika.Properties.Resources.Azul;
+            this.btnProduct.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnProduct.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnProduct.FlatAppearance.BorderSize = 0;
+            this.btnProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProduct.ForeColor = System.Drawing.Color.Transparent;
+            this.btnProduct.Image = global::papeSraErika.Properties.Resources.Azul;
             this.btnProduct.Location = new System.Drawing.Point(39, 173);
             this.btnProduct.Name = "btnProduct";
             this.btnProduct.Size = new System.Drawing.Size(114, 50);
@@ -80,11 +100,24 @@ namespace papeSraErika
             // 
             // panelCenter
             // 
+            this.panelCenter.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.panelCenter.Controls.Add(this.lblTime);
             this.panelCenter.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelCenter.Location = new System.Drawing.Point(183, 0);
             this.panelCenter.Name = "panelCenter";
             this.panelCenter.Size = new System.Drawing.Size(1063, 561);
             this.panelCenter.TabIndex = 1;
+            // 
+            // lblTime
+            // 
+            this.lblTime.AutoSize = true;
+            this.lblTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTime.ForeColor = System.Drawing.Color.Transparent;
+            this.lblTime.Location = new System.Drawing.Point(134, 140);
+            this.lblTime.Name = "lblTime";
+            this.lblTime.Size = new System.Drawing.Size(99, 42);
+            this.lblTime.TabIndex = 0;
+            this.lblTime.Text = "Hora";
             // 
             // Princial
             // 
@@ -96,6 +129,8 @@ namespace papeSraErika
             this.Name = "Princial";
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
+            this.panelCenter.ResumeLayout(false);
+            this.panelCenter.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -107,6 +142,7 @@ namespace papeSraErika
         private System.Windows.Forms.Panel panelCenter;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button Venta;
+        private System.Windows.Forms.Label lblTime;
     }
 }
 
