@@ -65,14 +65,14 @@ namespace papeSraErika
         private void button2_Click(object sender, System.EventArgs e)
         {
             selectItem();
-            string fecha = DateTime.Now.ToString("yyy-mm-dd");
+            string fecha = DateTime.Now.ToString("yyy-MM-dd");
             int numData = listBox1.Items.Count;
             int id_venta;
             string curItem;
             int id_prod;
             string total = lblTotal.Text;
             MessageBox.Show(fecha);
-            /*systemQuerys.principalQuery("insert into ventas(FECHA,TOTAL) values('"+fecha+ "','" + total.Replace(",",".") + "')");
+            systemQuerys.principalQuery("insert into ventas (FECHA,TOTAL) values ('"+fecha+"','" + total.Replace(",",".") + "')");
 
             for (int i = 1; i <= numData; i++)
             {
@@ -95,7 +95,7 @@ namespace papeSraErika
                 catch(Exception a) {
                     MessageBox.Show(a.ToString());
                 }
-            }*/
+            }
         }
 
         private void btnCancelar_Click(object sender, System.EventArgs e)

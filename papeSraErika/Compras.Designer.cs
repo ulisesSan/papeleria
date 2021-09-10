@@ -31,14 +31,14 @@ namespace papeSraErika
         {
             this.components = new System.ComponentModel.Container();
             this.DataTableVenta = new System.Windows.Forms.DataGridView();
+            this.idventaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fechaventaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.totalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mapCompraBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDetalle = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.idventaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fechaventaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.totalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.DataTableVenta)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mapCompraBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -62,6 +62,30 @@ namespace papeSraErika
             this.DataTableVenta.RowHeadersVisible = false;
             this.DataTableVenta.Size = new System.Drawing.Size(605, 279);
             this.DataTableVenta.TabIndex = 0;
+            // 
+            // idventaDataGridViewTextBoxColumn
+            // 
+            this.idventaDataGridViewTextBoxColumn.DataPropertyName = "Id_venta";
+            this.idventaDataGridViewTextBoxColumn.HeaderText = "Numero de venta";
+            this.idventaDataGridViewTextBoxColumn.Name = "idventaDataGridViewTextBoxColumn";
+            this.idventaDataGridViewTextBoxColumn.ReadOnly = true;
+            this.idventaDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // fechaventaDataGridViewTextBoxColumn
+            // 
+            this.fechaventaDataGridViewTextBoxColumn.DataPropertyName = "Fecha_venta";
+            this.fechaventaDataGridViewTextBoxColumn.HeaderText = "Fecha de venta";
+            this.fechaventaDataGridViewTextBoxColumn.Name = "fechaventaDataGridViewTextBoxColumn";
+            this.fechaventaDataGridViewTextBoxColumn.ReadOnly = true;
+            this.fechaventaDataGridViewTextBoxColumn.Width = 300;
+            // 
+            // totalDataGridViewTextBoxColumn
+            // 
+            this.totalDataGridViewTextBoxColumn.DataPropertyName = "Total";
+            this.totalDataGridViewTextBoxColumn.HeaderText = "Total";
+            this.totalDataGridViewTextBoxColumn.Name = "totalDataGridViewTextBoxColumn";
+            this.totalDataGridViewTextBoxColumn.ReadOnly = true;
+            this.totalDataGridViewTextBoxColumn.Width = 150;
             // 
             // mapCompraBindingSource
             // 
@@ -98,37 +122,13 @@ namespace papeSraErika
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(460, 101);
+            this.button2.Location = new System.Drawing.Point(477, 468);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(76, 41);
             this.button2.TabIndex = 4;
             this.button2.Text = "Copia de seguridad";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // idventaDataGridViewTextBoxColumn
-            // 
-            this.idventaDataGridViewTextBoxColumn.DataPropertyName = "Id_venta";
-            this.idventaDataGridViewTextBoxColumn.HeaderText = "Numero de venta";
-            this.idventaDataGridViewTextBoxColumn.Name = "idventaDataGridViewTextBoxColumn";
-            this.idventaDataGridViewTextBoxColumn.ReadOnly = true;
-            this.idventaDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // fechaventaDataGridViewTextBoxColumn
-            // 
-            this.fechaventaDataGridViewTextBoxColumn.DataPropertyName = "Fecha_venta";
-            this.fechaventaDataGridViewTextBoxColumn.HeaderText = "Fecha de venta";
-            this.fechaventaDataGridViewTextBoxColumn.Name = "fechaventaDataGridViewTextBoxColumn";
-            this.fechaventaDataGridViewTextBoxColumn.ReadOnly = true;
-            this.fechaventaDataGridViewTextBoxColumn.Width = 300;
-            // 
-            // totalDataGridViewTextBoxColumn
-            // 
-            this.totalDataGridViewTextBoxColumn.DataPropertyName = "Total";
-            this.totalDataGridViewTextBoxColumn.HeaderText = "Total";
-            this.totalDataGridViewTextBoxColumn.Name = "totalDataGridViewTextBoxColumn";
-            this.totalDataGridViewTextBoxColumn.ReadOnly = true;
-            this.totalDataGridViewTextBoxColumn.Width = 150;
             // 
             // Compras
             // 
