@@ -89,5 +89,10 @@ namespace papeSraErika
         {
             Table(null);
         }
+
+        private void productView_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

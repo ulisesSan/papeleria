@@ -30,18 +30,16 @@ namespace papeSraErika
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panelCenter = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.Venta = new System.Windows.Forms.Button();
             this.btnProduct = new System.Windows.Forms.Button();
-            this.panelCenter = new System.Windows.Forms.Panel();
-            this.lblTime = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            this.panelCenter.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.Venta);
             this.panel1.Controls.Add(this.btnProduct);
@@ -50,6 +48,15 @@ namespace papeSraErika
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(183, 561);
             this.panel1.TabIndex = 0;
+            // 
+            // panelCenter
+            // 
+            this.panelCenter.BackColor = System.Drawing.SystemColors.Highlight;
+            this.panelCenter.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelCenter.Location = new System.Drawing.Point(183, 0);
+            this.panelCenter.Name = "panelCenter";
+            this.panelCenter.Size = new System.Drawing.Size(1063, 561);
+            this.panelCenter.TabIndex = 1;
             // 
             // button2
             // 
@@ -98,27 +105,6 @@ namespace papeSraErika
             this.btnProduct.UseVisualStyleBackColor = true;
             this.btnProduct.Click += new System.EventHandler(this.btnProduct_Click);
             // 
-            // panelCenter
-            // 
-            this.panelCenter.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.panelCenter.Controls.Add(this.lblTime);
-            this.panelCenter.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelCenter.Location = new System.Drawing.Point(183, 0);
-            this.panelCenter.Name = "panelCenter";
-            this.panelCenter.Size = new System.Drawing.Size(1063, 561);
-            this.panelCenter.TabIndex = 1;
-            // 
-            // lblTime
-            // 
-            this.lblTime.AutoSize = true;
-            this.lblTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTime.ForeColor = System.Drawing.Color.Transparent;
-            this.lblTime.Location = new System.Drawing.Point(134, 140);
-            this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(99, 42);
-            this.lblTime.TabIndex = 0;
-            this.lblTime.Text = "Hora";
-            // 
             // Princial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -129,8 +115,6 @@ namespace papeSraErika
             this.Name = "Princial";
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
-            this.panelCenter.ResumeLayout(false);
-            this.panelCenter.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -142,7 +126,6 @@ namespace papeSraErika
         private System.Windows.Forms.Panel panelCenter;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button Venta;
-        private System.Windows.Forms.Label lblTime;
     }
 }
 

@@ -54,7 +54,7 @@ namespace papeSraErika
             this.productTable.AllowUserToAddRows = false;
             this.productTable.AllowUserToDeleteRows = false;
             this.productTable.AutoGenerateColumns = false;
-            this.productTable.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.productTable.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.productTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.productTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.barCodeDataGridViewTextBoxColumn,
@@ -104,6 +104,7 @@ namespace papeSraErika
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Transparent;
             this.label1.Location = new System.Drawing.Point(213, 79);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(56, 20);
@@ -135,6 +136,7 @@ namespace papeSraErika
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Transparent;
             this.label3.Location = new System.Drawing.Point(461, 9);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(137, 31);
@@ -209,6 +211,7 @@ namespace papeSraErika
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Highlight;
             this.ClientSize = new System.Drawing.Size(1063, 561);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnDelete);
@@ -221,6 +224,7 @@ namespace papeSraErika
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "productView";
             this.Text = "productView";
+            this.Load += new System.EventHandler(this.productView_Load);
             ((System.ComponentModel.ISupportInitialize)(this.productTable)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productMapBindingSource)).EndInit();
             this.ResumeLayout(false);

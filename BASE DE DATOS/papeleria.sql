@@ -76,7 +76,7 @@ DROP TABLE IF EXISTS `ventas`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ventas` (
   `ID` int unsigned NOT NULL AUTO_INCREMENT,
-  `FECHA` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `FECHA` date NOT NULL,
   `TOTAL` decimal(10,2) DEFAULT NULL,
   PRIMARY KEY (`ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;

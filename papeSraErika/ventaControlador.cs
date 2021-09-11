@@ -11,14 +11,14 @@ namespace papeSraErika
     {
         public List<object> Venta(string data)
         {
-            string fecha = DateTime.Now.ToString("yyy-mm-dd");
+            string fecha = DateTime.Now.ToString("yyy-MM-dd");
             MySqlDataReader reader;
             List<object> _list = new List<object>();
             string pQuery;
 
             if (data == null)
             {
-                pQuery = "select * from ventas where FECHA like %"+fecha+"%";
+                pQuery = "select * from ventas where FECHA like '%"+fecha+"%'";
             }
             else
             {
