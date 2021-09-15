@@ -31,13 +31,13 @@ namespace papeSraErika
         {
             this.components = new System.ComponentModel.Container();
             this.productTable = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.editProduct = new System.Windows.Forms.Button();
             this.textSearch = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.btnDelete = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.editProduct = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.barCodeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.brand1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -71,26 +71,6 @@ namespace papeSraErika
             this.productTable.Size = new System.Drawing.Size(763, 389);
             this.productTable.TabIndex = 0;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(913, 166);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(125, 34);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Agregar Producto";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // editProduct
-            // 
-            this.editProduct.Location = new System.Drawing.Point(913, 264);
-            this.editProduct.Name = "editProduct";
-            this.editProduct.Size = new System.Drawing.Size(125, 34);
-            this.editProduct.TabIndex = 2;
-            this.editProduct.Text = "Editar";
-            this.editProduct.UseVisualStyleBackColor = true;
-            this.editProduct.Click += new System.EventHandler(this.editProduct_Click);
-            // 
             // textSearch
             // 
             this.textSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -112,26 +92,6 @@ namespace papeSraErika
             this.label1.Text = "Buscar";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(913, 455);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(125, 34);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Actualizar";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.Location = new System.Drawing.Point(913, 364);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(125, 34);
-            this.btnDelete.TabIndex = 6;
-            this.btnDelete.Text = "Eliminar";
-            this.btnDelete.UseVisualStyleBackColor = true;
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -142,6 +102,63 @@ namespace papeSraErika
             this.label3.Size = new System.Drawing.Size(137, 31);
             this.label3.TabIndex = 8;
             this.label3.Text = "Productos";
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.BackgroundImage = global::papeSraErika.Properties.Resources.amarillochido;
+            this.btnDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnDelete.FlatAppearance.BorderSize = 0;
+            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDelete.ForeColor = System.Drawing.Color.Black;
+            this.btnDelete.Location = new System.Drawing.Point(913, 355);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(125, 43);
+            this.btnDelete.TabIndex = 6;
+            this.btnDelete.Text = "Eliminar";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // button3
+            // 
+            this.button3.BackgroundImage = global::papeSraErika.Properties.Resources.rojo;
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Location = new System.Drawing.Point(913, 437);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(125, 52);
+            this.button3.TabIndex = 5;
+            this.button3.Text = "Actualizar";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // editProduct
+            // 
+            this.editProduct.BackgroundImage = global::papeSraErika.Properties.Resources.Azul1;
+            this.editProduct.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.editProduct.FlatAppearance.BorderSize = 0;
+            this.editProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.editProduct.Location = new System.Drawing.Point(913, 249);
+            this.editProduct.Name = "editProduct";
+            this.editProduct.Size = new System.Drawing.Size(125, 49);
+            this.editProduct.TabIndex = 2;
+            this.editProduct.Text = "Editar";
+            this.editProduct.UseVisualStyleBackColor = true;
+            this.editProduct.Click += new System.EventHandler(this.editProduct_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackgroundImage = global::papeSraErika.Properties.Resources.verde;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(913, 166);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(125, 39);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Agregar Producto";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // barCodeDataGridViewTextBoxColumn
             // 
@@ -221,6 +238,7 @@ namespace papeSraErika
             this.Controls.Add(this.editProduct);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.productTable);
+            this.ForeColor = System.Drawing.Color.Transparent;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "productView";
             this.Text = "productView";

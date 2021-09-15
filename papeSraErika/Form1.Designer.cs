@@ -60,14 +60,15 @@ namespace papeSraErika
             // 
             // button2
             // 
+            this.button2.BackgroundImage = global::papeSraErika.Properties.Resources.Azul;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.Color.Transparent;
-            this.button2.Image = global::papeSraErika.Properties.Resources.Azul;
             this.button2.Location = new System.Drawing.Point(39, 274);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(114, 50);
+            this.button2.Size = new System.Drawing.Size(114, 62);
             this.button2.TabIndex = 3;
             this.button2.Text = "Ventas Realizadas";
             this.button2.UseVisualStyleBackColor = true;
@@ -75,14 +76,15 @@ namespace papeSraErika
             // 
             // Venta
             // 
+            this.Venta.BackgroundImage = global::papeSraErika.Properties.Resources.Azul;
+            this.Venta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Venta.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Venta.FlatAppearance.BorderSize = 0;
             this.Venta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Venta.ForeColor = System.Drawing.Color.Transparent;
-            this.Venta.Image = global::papeSraErika.Properties.Resources.Azul;
             this.Venta.Location = new System.Drawing.Point(39, 70);
             this.Venta.Name = "Venta";
-            this.Venta.Size = new System.Drawing.Size(114, 50);
+            this.Venta.Size = new System.Drawing.Size(114, 62);
             this.Venta.TabIndex = 2;
             this.Venta.Text = "Ventas";
             this.Venta.UseVisualStyleBackColor = true;
@@ -91,15 +93,14 @@ namespace papeSraErika
             // btnProduct
             // 
             this.btnProduct.BackgroundImage = global::papeSraErika.Properties.Resources.Azul;
-            this.btnProduct.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnProduct.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnProduct.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnProduct.FlatAppearance.BorderSize = 0;
             this.btnProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProduct.ForeColor = System.Drawing.Color.Transparent;
-            this.btnProduct.Image = global::papeSraErika.Properties.Resources.Azul;
             this.btnProduct.Location = new System.Drawing.Point(39, 173);
             this.btnProduct.Name = "btnProduct";
-            this.btnProduct.Size = new System.Drawing.Size(114, 50);
+            this.btnProduct.Size = new System.Drawing.Size(114, 62);
             this.btnProduct.TabIndex = 1;
             this.btnProduct.Text = "Productos";
             this.btnProduct.UseVisualStyleBackColor = true;
