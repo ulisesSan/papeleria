@@ -64,38 +64,47 @@ namespace papeSraErika
 
         private void button2_Click(object sender, System.EventArgs e)
         {
-            selectItem();
-            string fecha = DateTime.Now.ToString("yyy-MM-dd");
-            int numData = listBox1.Items.Count;
-            int id_venta;
-            string curItem;
-            int id_prod;
-            string total = lblTotal.Text;
-            MessageBox.Show(fecha);
-            systemQuerys.principalQuery("insert into ventas (FECHA,TOTAL) values ('"+fecha+"','" + total.Replace(",",".") + "')");
-
-            for (int i = 1; i <= numData; i++)
+            
+            if (listBox1.Items.Count == 0)
             {
-                try
+                MessageBox.Show("No ha ingresado ningún producto, favor de escanearlo o igresarlo manualmente");
+            }
+            else
+            {
+                selectItem();
+                string fecha = DateTime.Now.ToString("yyy-MM-dd");
+                int numData = listBox1.Items.Count;
+                int id_venta;
+                string curItem;
+                int id_prod;
+                string total = lblTotal.Text;
+                systemQuerys.principalQuery("insert into ventas (FECHA,TOTAL) values ('" + fecha + "','" + total.Replace(",", ".") + "')");
+
+                for (int i = 1; i <= numData; i++)
                 {
-                    curItem = listBox1.SelectedItem.ToString();
-                    
-                    string[] codigo = curItem.Split(' ');
-                    string last = codigo[codigo.Length-1];
-                    id_venta = int.Parse(systemQuerys.principalQuery("select max(id) from ventas"));
-                    id_prod = int.Parse(systemQuerys.principalQuery("select ID_PRODUCTO from productos where CODIGO_BARRAS = '" + codigo[0] + "'"));
-                    systemQuerys.principalQuery("insert into descripcion_venta(ID_PRD,ID_VENTA,CANTIDAD,SUBTOTAL)" +
-                        " values('" + id_prod + "','" + id_venta + "',1,'" + float.Parse(last) + "')");
-                    systemQuerys.principalQuery("update productos set STOCK = STOCK - '1' where CODIGO_BARRAS='" + codigo[0] + "'");
-                    listBox1.Items.Remove(listBox1.SelectedItem);
-                    selectItem();
-                    MessageBox.Show("el ultimo elemento es: " + last);
-                    lblTotal.Text = "0";
-                }
-                catch(Exception a) {
-                    MessageBox.Show(a.ToString());
+                    try
+                    {
+                        curItem = listBox1.SelectedItem.ToString();
+
+                        string[] codigo = curItem.Split(' ');
+                        MessageBox.Show(codigo[0]);
+                        string last = codigo[codigo.Length - 1];
+                        id_venta = int.Parse(systemQuerys.principalQuery("select max(id) from ventas"));
+                        id_prod = int.Parse(systemQuerys.principalQuery("select ID_PRODUCTO from productos where CODIGO_BARRAS = '" + codigo[0] + "'"));
+                        systemQuerys.principalQuery("insert into descripcion_venta(ID_PRD,ID_VENTA,CANTIDAD,SUBTOTAL)" +
+                            " values('" + id_prod + "','" + id_venta + "',1,'" + float.Parse(last) + "')");
+                        systemQuerys.principalQuery("update productos set STOCK = STOCK - '1' where CODIGO_BARRAS='" + codigo[0] + "'");
+                        listBox1.Items.Remove(listBox1.SelectedItem);
+                        selectItem();
+                        lblTotal.Text = "0";
+                    }
+                    catch (Exception a)
+                    {
+                        MessageBox.Show(a.ToString());
+                    }
                 }
             }
+            
         }
 
         private void btnCancelar_Click(object sender, System.EventArgs e)

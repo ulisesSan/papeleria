@@ -30,6 +30,7 @@ namespace papeSraErika
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.productTable = new System.Windows.Forms.DataGridView();
             this.textSearch = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -67,7 +68,17 @@ namespace papeSraErika
             this.productTable.Location = new System.Drawing.Point(113, 137);
             this.productTable.Name = "productTable";
             this.productTable.ReadOnly = true;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.productTable.RowHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.productTable.RowHeadersVisible = false;
+            this.productTable.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
+            this.productTable.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black;
             this.productTable.Size = new System.Drawing.Size(763, 389);
             this.productTable.TabIndex = 0;
             // 

@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
@@ -13,12 +14,13 @@ namespace papeSraErika
 {
     public partial class Compras : Form
     {
+        public float venta_total = 0;
         public Compras()
         {
             InitializeComponent();
             Tabla(null);
+            VentaTotal();
         }
-
         private void Tabla(string Data)
         {
             List<object> lista = new List<object>();
@@ -29,6 +31,7 @@ namespace papeSraErika
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             Tabla(null);
+            
         }
 
         private void btnDetalle_Click(object sender, EventArgs e)
@@ -60,5 +63,10 @@ namespace papeSraErika
                 }
             }
        }
+
+        private void VentaTotal()
+        {
+            ventaTotal.Text = venta_total.ToString("F2"); 
+        }
     }
 }

@@ -155,14 +155,15 @@ namespace papeSraErika
             // 
             // btnCancelar
             // 
+            this.btnCancelar.BackgroundImage = global::papeSraErika.Properties.Resources.rojo;
+            this.btnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCancelar.FlatAppearance.BorderSize = 0;
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.ForeColor = System.Drawing.Color.Transparent;
-            this.btnCancelar.Image = global::papeSraErika.Properties.Resources.rojo;
-            this.btnCancelar.Location = new System.Drawing.Point(484, 442);
+            this.btnCancelar.Location = new System.Drawing.Point(484, 436);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(112, 46);
+            this.btnCancelar.Size = new System.Drawing.Size(112, 59);
             this.btnCancelar.TabIndex = 8;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
@@ -170,11 +171,12 @@ namespace papeSraErika
             // 
             // button2
             // 
+            this.button2.BackgroundImage = global::papeSraErika.Properties.Resources.verde;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Transparent;
-            this.button2.Image = global::papeSraErika.Properties.Resources.verde;
             this.button2.Location = new System.Drawing.Point(333, 442);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(141, 46);
@@ -185,15 +187,15 @@ namespace papeSraErika
             // 
             // btnCancelAll
             // 
-            this.btnCancelAll.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnCancelAll.BackgroundImage = global::papeSraErika.Properties.Resources.rojo;
+            this.btnCancelAll.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnCancelAll.FlatAppearance.BorderSize = 0;
             this.btnCancelAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelAll.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelAll.ForeColor = System.Drawing.Color.Transparent;
-            this.btnCancelAll.Image = global::papeSraErika.Properties.Resources.rojo;
-            this.btnCancelAll.Location = new System.Drawing.Point(622, 442);
+            this.btnCancelAll.Location = new System.Drawing.Point(613, 433);
             this.btnCancelAll.Name = "btnCancelAll";
-            this.btnCancelAll.Size = new System.Drawing.Size(119, 46);
+            this.btnCancelAll.Size = new System.Drawing.Size(119, 65);
             this.btnCancelAll.TabIndex = 6;
             this.btnCancelAll.Text = "Cancelar todo";
             this.btnCancelAll.UseVisualStyleBackColor = true;

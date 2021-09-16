@@ -30,10 +30,10 @@ namespace papeSraErika
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panelCenter = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.Venta = new System.Windows.Forms.Button();
             this.btnProduct = new System.Windows.Forms.Button();
+            this.panelCenter = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,18 +49,9 @@ namespace papeSraErika
             this.panel1.Size = new System.Drawing.Size(183, 561);
             this.panel1.TabIndex = 0;
             // 
-            // panelCenter
-            // 
-            this.panelCenter.BackColor = System.Drawing.SystemColors.Highlight;
-            this.panelCenter.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelCenter.Location = new System.Drawing.Point(183, 0);
-            this.panelCenter.Name = "panelCenter";
-            this.panelCenter.Size = new System.Drawing.Size(1063, 561);
-            this.panelCenter.TabIndex = 1;
-            // 
             // button2
             // 
-            this.button2.BackgroundImage = global::papeSraErika.Properties.Resources.Azul;
+            this.button2.BackgroundImage = global::papeSraErika.Properties.Resources.Azul1;
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.FlatAppearance.BorderSize = 0;
@@ -76,8 +67,8 @@ namespace papeSraErika
             // 
             // Venta
             // 
-            this.Venta.BackgroundImage = global::papeSraErika.Properties.Resources.Azul;
-            this.Venta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Venta.BackgroundImage = global::papeSraErika.Properties.Resources.Azul1;
+            this.Venta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Venta.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Venta.FlatAppearance.BorderSize = 0;
             this.Venta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -92,7 +83,7 @@ namespace papeSraErika
             // 
             // btnProduct
             // 
-            this.btnProduct.BackgroundImage = global::papeSraErika.Properties.Resources.Azul;
+            this.btnProduct.BackgroundImage = global::papeSraErika.Properties.Resources.Azul1;
             this.btnProduct.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnProduct.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnProduct.FlatAppearance.BorderSize = 0;
@@ -105,6 +96,16 @@ namespace papeSraErika
             this.btnProduct.Text = "Productos";
             this.btnProduct.UseVisualStyleBackColor = true;
             this.btnProduct.Click += new System.EventHandler(this.btnProduct_Click);
+            // 
+            // panelCenter
+            // 
+            this.panelCenter.BackColor = System.Drawing.SystemColors.Highlight;
+            this.panelCenter.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelCenter.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelCenter.Location = new System.Drawing.Point(183, 0);
+            this.panelCenter.Name = "panelCenter";
+            this.panelCenter.Size = new System.Drawing.Size(1063, 561);
+            this.panelCenter.TabIndex = 1;
             // 
             // Princial
             // 
