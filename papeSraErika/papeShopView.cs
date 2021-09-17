@@ -85,9 +85,7 @@ namespace papeSraErika
                     try
                     {
                         curItem = listBox1.SelectedItem.ToString();
-
                         string[] codigo = curItem.Split(' ');
-                        MessageBox.Show(codigo[0]);
                         string last = codigo[codigo.Length - 1];
                         id_venta = int.Parse(systemQuerys.principalQuery("select max(id) from ventas"));
                         id_prod = int.Parse(systemQuerys.principalQuery("select ID_PRODUCTO from productos where CODIGO_BARRAS = '" + codigo[0] + "'"));
@@ -97,6 +95,7 @@ namespace papeSraErika
                         listBox1.Items.Remove(listBox1.SelectedItem);
                         selectItem();
                         lblTotal.Text = "0";
+                        txtCambio.Text = "";
                     }
                     catch (Exception a)
                     {

@@ -104,6 +104,8 @@
     <Compile Include="Compras.Designer.cs">
       <DependentUpon>Compras.cs</DependentUpon>
     </Compile>
+    <Compile Include="ControladorDescVenta.cs" />
+    <Compile Include="MapaDescVenta.cs" />
     <Compile Include="dataConection.cs" />
     <Compile Include="detalleCompra.cs">
       <SubType>Form</SubType>
@@ -176,6 +178,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\MapaDescVenta.datasource" />
     <None Include="Properties\DataSources\MapCompra.datasource" />
     <None Include="Properties\DataSources\papeSraErika.Properties.Resources.datasource" />
     <None Include="Properties\DataSources\papeSraErika.Properties.Settings.datasource" />

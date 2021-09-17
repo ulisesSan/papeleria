@@ -42,6 +42,7 @@ namespace papeSraErika
             this.btnCancelar = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btnCancelAll = new System.Windows.Forms.Button();
+            this.btnApart = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -201,12 +202,27 @@ namespace papeSraErika
             this.btnCancelAll.UseVisualStyleBackColor = true;
             this.btnCancelAll.Click += new System.EventHandler(this.btnCancelAll_Click);
             // 
+            // btnApart
+            // 
+            this.btnApart.BackgroundImage = global::papeSraErika.Properties.Resources.amarillo;
+            this.btnApart.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnApart.FlatAppearance.BorderSize = 0;
+            this.btnApart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnApart.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnApart.Location = new System.Drawing.Point(927, 503);
+            this.btnApart.Name = "btnApart";
+            this.btnApart.Size = new System.Drawing.Size(115, 46);
+            this.btnApart.TabIndex = 16;
+            this.btnApart.Text = "Apartar";
+            this.btnApart.UseVisualStyleBackColor = true;
+            // 
             // papeShopView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Highlight;
             this.ClientSize = new System.Drawing.Size(1063, 561);
+            this.Controls.Add(this.btnApart);
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.lblCambio);
             this.Controls.Add(this.label5);
@@ -243,5 +259,6 @@ namespace papeSraErika
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lblCambio;
         private System.Windows.Forms.Label lblTotal;
+        private System.Windows.Forms.Button btnApart;
     }
 }

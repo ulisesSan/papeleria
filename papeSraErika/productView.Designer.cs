@@ -30,7 +30,13 @@ namespace papeSraErika
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.productTable = new System.Windows.Forms.DataGridView();
             this.textSearch = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -68,14 +74,14 @@ namespace papeSraErika
             this.productTable.Location = new System.Drawing.Point(113, 137);
             this.productTable.Name = "productTable";
             this.productTable.ReadOnly = true;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.productTable.RowHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.productTable.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.productTable.RowHeadersVisible = false;
             this.productTable.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
             this.productTable.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black;
@@ -94,11 +100,11 @@ namespace papeSraErika
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Transparent;
             this.label1.Location = new System.Drawing.Point(213, 79);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 20);
+            this.label1.Size = new System.Drawing.Size(59, 23);
             this.label1.TabIndex = 4;
             this.label1.Text = "Buscar";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -174,6 +180,9 @@ namespace papeSraErika
             // barCodeDataGridViewTextBoxColumn
             // 
             this.barCodeDataGridViewTextBoxColumn.DataPropertyName = "BarCode";
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            this.barCodeDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle1;
             this.barCodeDataGridViewTextBoxColumn.Frozen = true;
             this.barCodeDataGridViewTextBoxColumn.HeaderText = "Codigo";
             this.barCodeDataGridViewTextBoxColumn.Name = "barCodeDataGridViewTextBoxColumn";
@@ -184,6 +193,9 @@ namespace papeSraErika
             // productNameDataGridViewTextBoxColumn
             // 
             this.productNameDataGridViewTextBoxColumn.DataPropertyName = "ProductName";
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            this.productNameDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle2;
             this.productNameDataGridViewTextBoxColumn.Frozen = true;
             this.productNameDataGridViewTextBoxColumn.HeaderText = "Nombre Del Producto";
             this.productNameDataGridViewTextBoxColumn.Name = "productNameDataGridViewTextBoxColumn";
@@ -194,6 +206,9 @@ namespace papeSraErika
             // brand1DataGridViewTextBoxColumn
             // 
             this.brand1DataGridViewTextBoxColumn.DataPropertyName = "Brand1";
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            this.brand1DataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle3;
             this.brand1DataGridViewTextBoxColumn.Frozen = true;
             this.brand1DataGridViewTextBoxColumn.HeaderText = "Marca";
             this.brand1DataGridViewTextBoxColumn.Name = "brand1DataGridViewTextBoxColumn";
@@ -204,6 +219,9 @@ namespace papeSraErika
             // description1DataGridViewTextBoxColumn
             // 
             this.description1DataGridViewTextBoxColumn.DataPropertyName = "Description1";
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            this.description1DataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle4;
             this.description1DataGridViewTextBoxColumn.Frozen = true;
             this.description1DataGridViewTextBoxColumn.HeaderText = "Descripción";
             this.description1DataGridViewTextBoxColumn.Name = "description1DataGridViewTextBoxColumn";
@@ -214,6 +232,9 @@ namespace papeSraErika
             // price1DataGridViewTextBoxColumn
             // 
             this.price1DataGridViewTextBoxColumn.DataPropertyName = "Price1";
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            this.price1DataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle5;
             this.price1DataGridViewTextBoxColumn.Frozen = true;
             this.price1DataGridViewTextBoxColumn.HeaderText = "Precio";
             this.price1DataGridViewTextBoxColumn.Name = "price1DataGridViewTextBoxColumn";
@@ -224,6 +245,9 @@ namespace papeSraErika
             // stock1DataGridViewTextBoxColumn
             // 
             this.stock1DataGridViewTextBoxColumn.DataPropertyName = "Stock1";
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            this.stock1DataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle6;
             this.stock1DataGridViewTextBoxColumn.Frozen = true;
             this.stock1DataGridViewTextBoxColumn.HeaderText = "Existencias";
             this.stock1DataGridViewTextBoxColumn.Name = "stock1DataGridViewTextBoxColumn";
@@ -270,13 +294,13 @@ namespace papeSraErika
         private System.Windows.Forms.TextBox textSearch;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridViewTextBoxColumn barCodeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn productNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn brand1DataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn description1DataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn price1DataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn stock1DataGridViewTextBoxColumn;
-        private System.Windows.Forms.Button btnDelete;
-        private System.Windows.Forms.Label label3;
     }
 }

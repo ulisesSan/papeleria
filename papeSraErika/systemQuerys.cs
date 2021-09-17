@@ -52,5 +52,24 @@ namespace papeSraErika
 
             return reader;
         }
+
+        public static void Copia()
+        {
+            string constring = "server=localhost;user=root;pwd=root;database=papeleria;";
+            string file = "C:\\Copias\\Backup.sql";
+            using (MySqlConnection conn = new MySqlConnection(constring))
+            {
+                using (MySqlCommand cmd = new MySqlCommand())
+                {
+                    using (MySqlBackup mb = new MySqlBackup(cmd))
+                    {
+                        cmd.Connection = conn;
+                        conn.Open();
+                        mb.ExportToFile(file);
+                        conn.Close();
+                    }
+                }
+            }
+        }
     }
 }

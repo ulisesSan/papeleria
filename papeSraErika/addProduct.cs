@@ -56,7 +56,7 @@ namespace papeSraErika
                         textPrecio.Text = "";
                         textStock.Text = "";
                         textCode.ReadOnly = false;
-                        textCode.SelectionStart = 0;
+                        textCode.SelectionStart = 1;
                     }
                     else
                     {

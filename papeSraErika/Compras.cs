@@ -14,18 +14,17 @@ namespace papeSraErika
 {
     public partial class Compras : Form
     {
-        public float venta_total = 0;
         public Compras()
         {
             InitializeComponent();
             Tabla(null);
-            VentaTotal();
         }
         private void Tabla(string Data)
         {
             List<object> lista = new List<object>();
             ventaControlador _ventas = new ventaControlador();
             DataTableVenta.DataSource = _ventas.Venta(Data);
+            ventaTotal.Text = systemQuerys.principalQuery("select sum(TOTAL) from ventas");
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
@@ -36,7 +35,8 @@ namespace papeSraErika
 
         private void btnDetalle_Click(object sender, EventArgs e)
         {
-            detalleCompra M = new detalleCompra();
+            detalleCompra M = new detalleCompra(DataTableVenta.CurrentRow.Cells[0].Value.ToString());
+            M.codigo = DataTableVenta.CurrentRow.Cells[0].ToString();
             M.Show();
         }
 
@@ -48,7 +48,7 @@ namespace papeSraErika
        private void copia()
        {
             string constring = "server=localhost;user=root;pwd=root;database=papeleria;";
-            string file = "C:\\Users\\Ulises Caceres\\Desktop\\backup.sql";
+            string file = "C:\\Copias\\Backup.sql";
             using (MySqlConnection conn = new MySqlConnection(constring))
             {
                 using (MySqlCommand cmd = new MySqlCommand())
@@ -64,9 +64,5 @@ namespace papeSraErika
             }
        }
 
-        private void VentaTotal()
-        {
-            ventaTotal.Text = venta_total.ToString("F2"); 
-        }
     }
 }

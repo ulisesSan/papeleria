@@ -12,14 +12,23 @@ namespace papeSraErika
 {
     public partial class detalleCompra : Form
     {
-        public detalleCompra()
+        public string codigo;
+        public detalleCompra(string _codigo)
         {
             InitializeComponent();
+            DetalleCompra(_codigo);
         }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        public void DetalleCompra(string data)
+        {
+            List<object> lista = new List<object>();
+            ControladorDescVenta _products = new ControladorDescVenta();
+            DataDescVenta.DataSource = _products.descVenta(data);
         }
     }
 }

@@ -29,50 +29,101 @@ namespace papeSraErika
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnExit = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.DataDescVenta = new System.Windows.Forms.DataGridView();
+            this.mapaDescVentaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.idventaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cantidadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.subtotalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.DataDescVenta)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mapaDescVentaBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(235, 360);
+            this.btnExit.BackgroundImage = global::papeSraErika.Properties.Resources.rojo;
+            this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnExit.Location = new System.Drawing.Point(268, 324);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(114, 39);
+            this.btnExit.Size = new System.Drawing.Size(114, 56);
             this.btnExit.TabIndex = 0;
             this.btnExit.Text = "Salir";
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // button2
+            // DataDescVenta
             // 
-            this.button2.Location = new System.Drawing.Point(85, 360);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(111, 39);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.DataDescVenta.AllowUserToAddRows = false;
+            this.DataDescVenta.AllowUserToDeleteRows = false;
+            this.DataDescVenta.AutoGenerateColumns = false;
+            this.DataDescVenta.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.DataDescVenta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataDescVenta.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idventaDataGridViewTextBoxColumn,
+            this.nombreDataGridViewTextBoxColumn,
+            this.cantidadDataGridViewTextBoxColumn,
+            this.subtotalDataGridViewTextBoxColumn});
+            this.DataDescVenta.DataSource = this.mapaDescVentaBindingSource;
+            this.DataDescVenta.Location = new System.Drawing.Point(85, 60);
+            this.DataDescVenta.Name = "DataDescVenta";
+            this.DataDescVenta.ReadOnly = true;
+            this.DataDescVenta.RowHeadersVisible = false;
+            this.DataDescVenta.Size = new System.Drawing.Size(503, 242);
+            this.DataDescVenta.TabIndex = 2;
             // 
-            // dataGridView1
+            // mapaDescVentaBindingSource
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(85, 60);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(636, 242);
-            this.dataGridView1.TabIndex = 2;
+            this.mapaDescVentaBindingSource.DataSource = typeof(papeSraErika.MapaDescVenta);
+            // 
+            // idventaDataGridViewTextBoxColumn
+            // 
+            this.idventaDataGridViewTextBoxColumn.DataPropertyName = "Id_venta";
+            this.idventaDataGridViewTextBoxColumn.HeaderText = "Numero de venta";
+            this.idventaDataGridViewTextBoxColumn.Name = "idventaDataGridViewTextBoxColumn";
+            this.idventaDataGridViewTextBoxColumn.ReadOnly = true;
+            this.idventaDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // nombreDataGridViewTextBoxColumn
+            // 
+            this.nombreDataGridViewTextBoxColumn.DataPropertyName = "Nombre";
+            this.nombreDataGridViewTextBoxColumn.HeaderText = "Nombre";
+            this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
+            this.nombreDataGridViewTextBoxColumn.ReadOnly = true;
+            this.nombreDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // cantidadDataGridViewTextBoxColumn
+            // 
+            this.cantidadDataGridViewTextBoxColumn.DataPropertyName = "Cantidad";
+            this.cantidadDataGridViewTextBoxColumn.HeaderText = "Cantidad";
+            this.cantidadDataGridViewTextBoxColumn.Name = "cantidadDataGridViewTextBoxColumn";
+            this.cantidadDataGridViewTextBoxColumn.ReadOnly = true;
+            this.cantidadDataGridViewTextBoxColumn.Width = 50;
+            // 
+            // subtotalDataGridViewTextBoxColumn
+            // 
+            this.subtotalDataGridViewTextBoxColumn.DataPropertyName = "Subtotal";
+            this.subtotalDataGridViewTextBoxColumn.HeaderText = "Subtotal";
+            this.subtotalDataGridViewTextBoxColumn.Name = "subtotalDataGridViewTextBoxColumn";
+            this.subtotalDataGridViewTextBoxColumn.ReadOnly = true;
+            this.subtotalDataGridViewTextBoxColumn.Width = 150;
             // 
             // detalleCompra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button2);
+            this.BackColor = System.Drawing.SystemColors.Highlight;
+            this.ClientSize = new System.Drawing.Size(676, 408);
+            this.Controls.Add(this.DataDescVenta);
             this.Controls.Add(this.btnExit);
             this.Name = "detalleCompra";
             this.Text = "detalleCompra";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataDescVenta)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mapaDescVentaBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -80,7 +131,11 @@ namespace papeSraErika
         #endregion
 
         private System.Windows.Forms.Button btnExit;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView DataDescVenta;
+        private System.Windows.Forms.BindingSource mapaDescVentaBindingSource;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idventaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombreDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cantidadDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn subtotalDataGridViewTextBoxColumn;
     }
 }
