@@ -50,7 +50,7 @@ CREATE TABLE `productos` (
   `ID_PRODUCTO` int NOT NULL AUTO_INCREMENT,
   `NOMBRE` varchar(30) DEFAULT NULL,
   `MARCA` varchar(30) DEFAULT NULL,
-  `DESCRIPCION` text,
+  `DESCRIPCION` text(100),
   `CODIGO_BARRAS` text(13) NOT NULL,
   `STOCK` int unsigned DEFAULT NULL,
   `PRECIO` decimal(10,2) DEFAULT NULL,
