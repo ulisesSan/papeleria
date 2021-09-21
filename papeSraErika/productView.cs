@@ -72,17 +72,10 @@ namespace papeSraErika
         private void btnDelete_Click(object sender, EventArgs e)
         {
             string barcode = productTable.CurrentRow.Cells[0].Value.ToString();
-            string sql = "delete from productos where CODIGO_BARRAS = '" + barcode + "';";
 
-            DialogResult sino = MessageBox.Show("¿Esta seguro de elominar este producto?", "Agregar otro producto", MessageBoxButtons.YesNo);
-            if (sino == DialogResult.Yes)
-            {
-                systemQuerys.principalQuery(sql);
-                MessageBox.Show("Producto eliminado con exito");
+            Contrasena m = new Contrasena(barcode);
 
-                Table(null);
-            }
-
+            m.Show();
         }   
 
         public void table2()
@@ -94,5 +87,11 @@ namespace papeSraErika
         {
 
         }
+
+        private void addStock_Click(object sender, EventArgs e)
+        {
+            AddStock m = new AddStock();
+            m.Show();
+            }
     }
 }

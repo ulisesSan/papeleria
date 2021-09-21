@@ -41,6 +41,7 @@ namespace papeSraErika
             this.textSearch = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.addStock = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.editProduct = new System.Windows.Forms.Button();
@@ -120,6 +121,20 @@ namespace papeSraErika
             this.label3.TabIndex = 8;
             this.label3.Text = "Productos";
             // 
+            // addStock
+            // 
+            this.addStock.BackgroundImage = global::papeSraErika.Properties.Resources.verde;
+            this.addStock.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.addStock.FlatAppearance.BorderSize = 0;
+            this.addStock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addStock.Location = new System.Drawing.Point(913, 197);
+            this.addStock.Name = "addStock";
+            this.addStock.Size = new System.Drawing.Size(125, 39);
+            this.addStock.TabIndex = 9;
+            this.addStock.Text = "Agregar stock";
+            this.addStock.UseVisualStyleBackColor = true;
+            this.addStock.Click += new System.EventHandler(this.addStock_Click);
+            // 
             // btnDelete
             // 
             this.btnDelete.BackgroundImage = global::papeSraErika.Properties.Resources.amarillochido;
@@ -155,7 +170,7 @@ namespace papeSraErika
             this.editProduct.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.editProduct.FlatAppearance.BorderSize = 0;
             this.editProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.editProduct.Location = new System.Drawing.Point(913, 249);
+            this.editProduct.Location = new System.Drawing.Point(913, 274);
             this.editProduct.Name = "editProduct";
             this.editProduct.Size = new System.Drawing.Size(125, 49);
             this.editProduct.TabIndex = 2;
@@ -169,7 +184,7 @@ namespace papeSraErika
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(913, 166);
+            this.button1.Location = new System.Drawing.Point(913, 113);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(125, 39);
             this.button1.TabIndex = 1;
@@ -265,6 +280,7 @@ namespace papeSraErika
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Highlight;
             this.ClientSize = new System.Drawing.Size(1063, 561);
+            this.Controls.Add(this.addStock);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.button3);
@@ -302,5 +318,6 @@ namespace papeSraErika
         private System.Windows.Forms.DataGridViewTextBoxColumn description1DataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn price1DataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn stock1DataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button addStock;
     }
 }

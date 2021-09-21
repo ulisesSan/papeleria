@@ -98,11 +98,23 @@
     <Compile Include="addProduct.Designer.cs">
       <DependentUpon>addProduct.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddStock.Designer.cs">
+      <DependentUpon>AddStock.cs</DependentUpon>
+    </Compile>
     <Compile Include="Compras.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Compras.Designer.cs">
       <DependentUpon>Compras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contrasena.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contrasena.Designer.cs">
+      <DependentUpon>Contrasena.cs</DependentUpon>
     </Compile>
     <Compile Include="ControladorDescVenta.cs" />
     <Compile Include="MapaDescVenta.cs" />
@@ -149,8 +161,14 @@
     <EmbeddedResource Include="addProduct.resx">
       <DependentUpon>addProduct.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AddStock.resx">
+      <DependentUpon>AddStock.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Compras.resx">
       <DependentUpon>Compras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contrasena.resx">
+      <DependentUpon>Contrasena.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="detalleCompra.resx">
       <DependentUpon>detalleCompra.cs</DependentUpon>

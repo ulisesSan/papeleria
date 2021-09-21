@@ -21,10 +21,11 @@ namespace papeSraErika
         }
         private void Tabla(string Data)
         {
+            string fecha = DateTime.Now.ToString("yyy-MM-dd");
             List<object> lista = new List<object>();
             ventaControlador _ventas = new ventaControlador();
             DataTableVenta.DataSource = _ventas.Venta(Data);
-            ventaTotal.Text = systemQuerys.principalQuery("select sum(TOTAL) from ventas");
+            ventaTotal.Text = systemQuerys.principalQuery("select sum(TOTAL) from ventas where FECHA ='"+fecha+"'");
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)

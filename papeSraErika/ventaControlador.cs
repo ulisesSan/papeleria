@@ -33,7 +33,7 @@ namespace papeSraErika
                 MapCompra _compra = new MapCompra();
 
                 _compra.Id_venta = int.Parse(reader.GetString(0));
-                _compra.Fecha_venta = reader.GetString(1);
+                _compra.Fecha_venta = DateTime.Parse(reader.GetString(1));
                 _compra.Total = reader.GetString(2);
                 _list.Add(_compra);
                 
