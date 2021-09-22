@@ -19,31 +19,38 @@ namespace papeSraErika
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (Codigo.Text == "" || Stock.Text == "")
+            int num = int.Parse(Stock.Text);
+            if (Codigo.Text == "" || Stock.Text == ""||num <=0)
             {
-                MessageBox.Show("Debe de llenar ambos campos");
+                MessageBox.Show("Debe de llenar ambos campos o introducir numeros validos");
             }
             else 
             {
                 string _codigo = Codigo.Text;
                 string _stock = Stock.Text;
+                try {
+                    int num2 = int.Parse(_stock);
+                    string sql = "update productos set STOCK = STOCK + " + _stock + " where CODIGO_BARRAS = '" + _codigo + "'";
+                    systemQuerys.principalQuery(sql);
+                    DialogResult sino = MessageBox.Show("Desea agregar otro producto", "Agregar otro producto", MessageBoxButtons.YesNo);
+                    if (sino == DialogResult.Yes)
+                    {
+                        Codigo.Text = "";
+                        Stock.Text = "";
 
-                string sql = "update productos set STOCK = STOCK + " + _stock + " where CODIGO_BARRAS = '" + _codigo + "'";
-                systemQuerys.principalQuery(sql);
-                DialogResult sino = MessageBox.Show("Desea agregar otro producto", "Agregar otro producto", MessageBoxButtons.YesNo);
-                if (sino == DialogResult.Yes)
-                {
-                    Codigo.Text = "";
-                    Stock.Text = "";
-                    
+                    }
+                    else
+                    {
+                        productView M = new productView();
+                        var form = new productView();
+                        form.table2();
+                        this.Close();
+                    }
+                } catch {
+                    MessageBox.Show("Solo se pueden agregar numeros en le campo Cantidad");
                 }
-                else
-                {
-                    productView M = new productView();
-                    var form = new productView();
-                    form.table2();
-                    this.Close();
-                }
+
+                
             }
         }
 
