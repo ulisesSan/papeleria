@@ -153,3 +153,6 @@ D:\Documents\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.csproj.Copy
 D:\Documents\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.exe
 D:\Documents\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.pdb
 D:\Documents\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.AddStock.resources
+C:\Users\Ulises Caceres\Documents\GitHub\sraEricaPape\papeSraErika\bin\Debug\MySqlBackup.dll
+C:\Users\Ulises Caceres\Documents\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.AddStock.resources
+C:\Users\Ulises Caceres\Documents\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.Contrasena.resources
