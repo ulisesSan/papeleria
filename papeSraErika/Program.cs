@@ -18,7 +18,7 @@ namespace papeSraErika
             systemQuerys.Copia();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Princial());
+            Application.Run(new Usuarios());
         }
     }
 }
