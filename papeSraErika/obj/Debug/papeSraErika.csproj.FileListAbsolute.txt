@@ -108,7 +108,6 @@ D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\System.Buffers.xml
 D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\System.Memory.xml
 D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\System.Numerics.Vectors.xml
 D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-D:\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.csproj.CopyComplete
 D:\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.exe
 D:\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.pdb
 D:\Documents\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.addProduct.resources
@@ -199,3 +198,7 @@ C:\Users\Ulises\Documents\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErik
 C:\Users\Ulises\Documents\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.csproj.CopyComplete
 C:\Users\Ulises\Documents\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.exe
 C:\Users\Ulises\Documents\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.pdb
+D:\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.AddStock.resources
+D:\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.Contrasena.resources
+D:\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.NuevoUsuario.resources
+D:\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.Usuarios.resources

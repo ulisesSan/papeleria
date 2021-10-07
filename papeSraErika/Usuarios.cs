@@ -23,7 +23,7 @@ namespace papeSraErika
             string pass = txtPassword.Text;
             string res;
 
-            res = systemQuerys.principalQuery("select * from usuario where NOMBRE = '" + user + "' and CONTRASENA = '" + pass + "'");
+            res = systemQuerys.principalQuery("select * from usuario where NOMBRE = '" + user + "' and contraseña = '" + pass + "'");
 
             if(res == null)
             {
