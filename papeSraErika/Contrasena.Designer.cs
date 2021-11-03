@@ -96,7 +96,7 @@ namespace papeSraErika
             this.Controls.Add(this.txtPassword);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Contrasena";
-            this.Text = "Contrasena";
+            this.Text = "Contraseña";
             this.ResumeLayout(false);
             this.PerformLayout();
 

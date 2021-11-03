@@ -24,17 +24,27 @@ namespace papeSraErika
             string res;
 
             res = systemQuerys.principalQuery("select * from usuario where NOMBRE = '" + user + "' and contraseña = '" + pass + "'");
-
-            if(res == null)
-            {
-                MessageBox.Show("Contraseña erronea");
-            }
-
-            else
+            
+            if(user == "Erika" && pass == "Momi1960")
             {
                 Princial m = new Princial();
                 m.Show();
+                this.Hide();
             }
+            else
+            {
+                if (res == null)
+                {
+                    MessageBox.Show("Contraseña o usuarios errones");
+                }
+
+                else
+                {
+                    Princial m = new Princial();
+                    m.Show();
+                }
+            }
+            
 
         }
 
@@ -45,7 +55,8 @@ namespace papeSraErika
 
         private void btnNUser_Click(object sender, EventArgs e)
         {
-
+            Contrasena m = new Contrasena(null);
+            m.Show();
         }
     }
 }

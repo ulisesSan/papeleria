@@ -25,14 +25,23 @@ namespace papeSraErika
 
             if (password == "momi1960")
             {
-                string sql = "delete from productos where CODIGO_BARRAS = '" + _data + "';";
-
-                DialogResult sino = MessageBox.Show("¿Esta seguro de eliminar este producto?", "Agregar otro producto", MessageBoxButtons.YesNo);
-                if (sino == DialogResult.Yes)
+                if (_data == null)
                 {
-                    systemQuerys.principalQuery(sql);
-                    MessageBox.Show("Producto eliminado con exito");
+                    NuevoUsuario m = new NuevoUsuario();
+                    m.Show();
                     this.Close();
+                }
+                else
+                {
+                    string sql = "delete from productos where CODIGO_BARRAS = '" + _data + "';";
+
+                    DialogResult sino = MessageBox.Show("¿Esta seguro de eliminar este producto?", "Agregar otro producto", MessageBoxButtons.YesNo);
+                    if (sino == DialogResult.Yes)
+                    {
+                        systemQuerys.principalQuery(sql);
+                        MessageBox.Show("Producto eliminado con exito");
+                        this.Close();
+                    }
                 }
             }
             else
