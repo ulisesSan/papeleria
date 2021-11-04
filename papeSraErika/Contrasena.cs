@@ -23,7 +23,7 @@ namespace papeSraErika
         {
             string password = txtPassword.Text;
 
-            if (password == "momi1960")
+            if (password == "Momi1960")
             {
                 if (_data == null)
                 {

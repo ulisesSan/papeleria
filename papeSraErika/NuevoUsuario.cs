@@ -16,5 +16,24 @@ namespace papeSraErika
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            String password1 = Password1.Text;
+            String password2 = Password2.Text;
+            if (password1 == password2 && password2 != "" &&password1 != "")
+            {
+                
+            }
+            else
+            {
+                MessageBox.Show("Las contraseñas no coinciden");
+            }
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
