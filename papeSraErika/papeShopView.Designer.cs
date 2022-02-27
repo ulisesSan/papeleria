@@ -188,7 +188,7 @@ namespace papeSraErika
             // 
             // btnCancelAll
             // 
-            this.btnCancelAll.BackgroundImage = global::papeSraErika.Properties.Resources.rojo;
+            this.btnCancelAll.BackgroundImage = global::papeSraErika.Properties.Resources.amarillo;
             this.btnCancelAll.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnCancelAll.FlatAppearance.BorderSize = 0;
             this.btnCancelAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -204,7 +204,7 @@ namespace papeSraErika
             // 
             // btnApart
             // 
-            this.btnApart.BackgroundImage = global::papeSraErika.Properties.Resources.amarillo;
+            this.btnApart.BackgroundImage = global::papeSraErika.Properties.Resources.amarillochido;
             this.btnApart.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnApart.FlatAppearance.BorderSize = 0;
             this.btnApart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
