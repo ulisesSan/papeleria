@@ -204,3 +204,5 @@ D:\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.NuevoUsuario.resource
 D:\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.Usuarios.resources
 C:\Users\Ulises Caceres\Documents\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.NuevoUsuario.resources
 C:\Users\Ulises Caceres\Documents\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.Usuarios.resources
+D:\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.csproj.SuggestedBindingRedirects.cache
+D:\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.csproj.CopyComplete
