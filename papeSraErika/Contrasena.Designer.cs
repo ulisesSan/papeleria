@@ -76,7 +76,7 @@ namespace papeSraErika
             this.button2.BackgroundImage = global::papeSraErika.Properties.Resources.amarillo;
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button2.ForeColor = System.Drawing.SystemColors.InactiveBorder;
             this.button2.Location = new System.Drawing.Point(212, 61);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(85, 43);

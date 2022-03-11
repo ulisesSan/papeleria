@@ -22,6 +22,10 @@ namespace papeSraErika
             string user = txtUser.Text;
             string pass = txtPassword.Text;
             string res;
+            string update;
+
+            update = "update usuario set estatus = 0";
+            systemQuerys.principalQuery(update);
 
             res = systemQuerys.principalQuery("select * from usuario where NOMBRE = '" + user + "' and contraseña = '" + pass + "'");
             
@@ -40,8 +44,11 @@ namespace papeSraErika
 
                 else
                 {
+                    update = "update usuario set estatus = 1 where nombre = '"+user+"'";
+                    systemQuerys.principalQuery(update);
                     Princial m = new Princial();
                     m.Show();
+                    this.Hide();
                 }
             }
             

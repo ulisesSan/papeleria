@@ -215,6 +215,7 @@
       <DependentUpon>Usuarios.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\ControladorDescVenta.datasource" />
     <None Include="Properties\DataSources\MapaDescVenta.datasource" />
     <None Include="Properties\DataSources\MapCompra.datasource" />
     <None Include="Properties\DataSources\papeSraErika.Properties.Resources.datasource" />

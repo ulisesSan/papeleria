@@ -23,7 +23,14 @@ namespace papeSraErika
             String password2 = Password2.Text;
             if (password1 == password2 && password2 != "" &&password1 != "")
             {
-                
+                string sql = "Insert into usuario (nombre, contraseña) values ('"+NameUser.Text+"', '"+password1+"') ";
+                Usuarios m = new Usuarios();
+
+                systemQuerys.principalQuery(sql);
+
+                m.Show();
+
+                this.Close();
             }
             else
             {

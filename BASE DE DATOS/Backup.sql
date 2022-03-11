@@ -64,7 +64,7 @@ CREATE TABLE IF NOT EXISTS `productos` (
 
 DROP TABLE IF EXISTS `usuario`;
 CREATE TABLE IF NOT EXISTS `usuario` (
-  `id` int unsigned NOT NULL,
+  `id` int unsigned AUTO_INCREMENT NOT NULL,
   `nombre` varchar(30) DEFAULT NULL,
   `contraseña` text,
   PRIMARY KEY (`id`)

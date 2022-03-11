@@ -35,12 +35,14 @@ namespace papeSraErika
             this.Venta = new System.Windows.Forms.Button();
             this.btnProduct = new System.Windows.Forms.Button();
             this.panelCenter = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.Venta);
             this.panel1.Controls.Add(this.btnProduct);
@@ -108,6 +110,20 @@ namespace papeSraErika
             this.panelCenter.Size = new System.Drawing.Size(1063, 561);
             this.panelCenter.TabIndex = 1;
             // 
+            // button1
+            // 
+            this.button1.BackgroundImage = global::papeSraErika.Properties.Resources.rojo;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Image = global::papeSraErika.Properties.Resources.rojo;
+            this.button1.Location = new System.Drawing.Point(55, 473);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(98, 57);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Cerrar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Princial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -118,6 +134,7 @@ namespace papeSraErika
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Princial";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Princial_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -130,6 +147,7 @@ namespace papeSraErika
         private System.Windows.Forms.Panel panelCenter;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button Venta;
+        private System.Windows.Forms.Button button1;
     }
 }
 
