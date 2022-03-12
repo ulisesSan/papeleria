@@ -43,6 +43,8 @@ namespace papeSraErika
             this.button2 = new System.Windows.Forms.Button();
             this.btnCancelAll = new System.Windows.Forms.Button();
             this.btnApart = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.cantidadText = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -61,7 +63,7 @@ namespace papeSraErika
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.Color.Black;
             this.textBox1.HideSelection = false;
-            this.textBox1.Location = new System.Drawing.Point(127, 423);
+            this.textBox1.Location = new System.Drawing.Point(101, 398);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(126, 29);
             this.textBox1.TabIndex = 2;
@@ -84,7 +86,7 @@ namespace papeSraErika
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(38, 428);
+            this.label3.Location = new System.Drawing.Point(12, 403);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(83, 24);
             this.label3.TabIndex = 5;
@@ -106,7 +108,7 @@ namespace papeSraErika
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(51, 468);
+            this.label4.Location = new System.Drawing.Point(20, 445);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(75, 24);
             this.label4.TabIndex = 11;
@@ -116,7 +118,7 @@ namespace papeSraErika
             // 
             this.txtCambio.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCambio.ForeColor = System.Drawing.Color.Black;
-            this.txtCambio.Location = new System.Drawing.Point(127, 462);
+            this.txtCambio.Location = new System.Drawing.Point(101, 442);
             this.txtCambio.Name = "txtCambio";
             this.txtCambio.Size = new System.Drawing.Size(100, 29);
             this.txtCambio.TabIndex = 12;
@@ -127,7 +129,7 @@ namespace papeSraErika
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Transparent;
-            this.label5.Location = new System.Drawing.Point(233, 465);
+            this.label5.Location = new System.Drawing.Point(207, 445);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(20, 24);
             this.label5.TabIndex = 13;
@@ -216,12 +218,34 @@ namespace papeSraErika
             this.btnApart.Text = "Apartar";
             this.btnApart.UseVisualStyleBackColor = true;
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Transparent;
+            this.label6.Location = new System.Drawing.Point(233, 403);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(84, 24);
+            this.label6.TabIndex = 17;
+            this.label6.Text = "Cantidad";
+            // 
+            // cantidadText
+            // 
+            this.cantidadText.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cantidadText.Location = new System.Drawing.Point(323, 398);
+            this.cantidadText.Name = "cantidadText";
+            this.cantidadText.Size = new System.Drawing.Size(46, 29);
+            this.cantidadText.TabIndex = 18;
+            this.cantidadText.Text = "1";
+            // 
             // papeShopView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Highlight;
             this.ClientSize = new System.Drawing.Size(1063, 561);
+            this.Controls.Add(this.cantidadText);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.btnApart);
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.lblCambio);
@@ -260,5 +284,7 @@ namespace papeSraErika
         private System.Windows.Forms.Label lblCambio;
         private System.Windows.Forms.Label lblTotal;
         private System.Windows.Forms.Button btnApart;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox cantidadText;
     }
 }

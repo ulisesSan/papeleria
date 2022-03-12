@@ -28,6 +28,7 @@ namespace papeSraErika
             int bandera = 0;
             string sql = "select * from productos where CODIGO_BARRAS = '" + data + "'";
             string _list = null;
+            
             MySqlDataReader res = systemQuerys.dataTable(sql);
             while (res.Read())
             {
@@ -40,19 +41,24 @@ namespace papeSraErika
                 }
                 else
                 {
+                    float precioTotal;
+                    string datoTotal;
                     _list = res.GetString(4);
                     if(_list.Length != 13)
                     {
                         
                     }
                     _list += " " + res.GetString(1);
-                    _list += " $ " + res.GetString(6);
+                    precioTotal = float.Parse(res.GetString(6)) * float.Parse(cantidadText.Text);
+                    datoTotal = precioTotal.ToString();
+                    _list += " $ " + precioTotal.ToString();
                     string Precio = res.GetString(6);
                     float precioSum = float.Parse(lblTotal.Text) + float.Parse(Precio);
                     lblTotal.Text = precioSum.ToString("F2");
-                    listBox1.Items.Add(_list);
+                    listBox1.Items.Add(_list + " Cantidad " + cantidadText.Text);
                     listBox1.SetSelected(0,true);
                     bandera = 2;
+                    cantidadText.Text = "1";
                 }
                 
             }
@@ -77,6 +83,7 @@ namespace papeSraErika
                 int id_venta;
                 string curItem;
                 int id_prod;
+                int cantidad = int.Parse(cantidadText.Text);
                 string total = lblTotal.Text;
                 string vendedor = systemQuerys.principalQuery("select id from usuario where estatus = 1");
                 systemQuerys.principalQuery("insert into ventas (FECHA,TOTAL,vendedor) values ('" + fecha + "','" + total.Replace(",", ".") + "','"+vendedor+"')");
