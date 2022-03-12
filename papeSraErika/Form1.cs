@@ -62,5 +62,10 @@ namespace papeSraErika
         {
             Application.Exit();
         }
+
+        private void panelCenter_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -109,6 +109,7 @@ namespace papeSraErika
             this.panelCenter.Name = "panelCenter";
             this.panelCenter.Size = new System.Drawing.Size(1063, 561);
             this.panelCenter.TabIndex = 1;
+            this.panelCenter.Paint += new System.Windows.Forms.PaintEventHandler(this.panelCenter_Paint);
             // 
             // button1
             // 
