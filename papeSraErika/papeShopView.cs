@@ -78,7 +78,8 @@ namespace papeSraErika
                 string curItem;
                 int id_prod;
                 string total = lblTotal.Text;
-                systemQuerys.principalQuery("insert into ventas (FECHA,TOTAL) values ('" + fecha + "','" + total.Replace(",", ".") + "')");
+                string vendedor = systemQuerys.principalQuery("select id from usuario where estatus = 1");
+                systemQuerys.principalQuery("insert into ventas (FECHA,TOTAL,vendedor) values ('" + fecha + "','" + total.Replace(",", ".") + "','"+vendedor+"')");
 
                 for (int i = 1; i <= numData; i++)
                 {

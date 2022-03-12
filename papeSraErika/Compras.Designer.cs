@@ -30,23 +30,19 @@ namespace papeSraErika
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.mapCompraBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDetalle = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.ventaTotal = new System.Windows.Forms.Label();
             this.DataTableVenta = new System.Windows.Forms.DataGridView();
-            this.mapCompraBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.mapCompraBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vendedorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.mapCompraBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataTableVenta)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mapCompraBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mapCompraBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // btnUpdate
@@ -124,51 +120,51 @@ namespace papeSraErika
             this.DataTableVenta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.DataTableVenta.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
+            this.vendedorDataGridViewTextBoxColumn,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3});
-            this.DataTableVenta.DataSource = this.mapCompraBindingSource1;
-            this.DataTableVenta.Location = new System.Drawing.Point(255, 204);
+            this.DataTableVenta.DataSource = this.mapCompraBindingSource;
+            this.DataTableVenta.Location = new System.Drawing.Point(222, 204);
             this.DataTableVenta.Name = "DataTableVenta";
             this.DataTableVenta.ReadOnly = true;
             this.DataTableVenta.RowHeadersVisible = false;
-            this.DataTableVenta.Size = new System.Drawing.Size(554, 198);
+            this.DataTableVenta.Size = new System.Drawing.Size(604, 198);
             this.DataTableVenta.TabIndex = 7;
             // 
-            // mapCompraBindingSource1
+            // mapCompraBindingSource
             // 
-            this.mapCompraBindingSource1.DataSource = typeof(papeSraErika.MapCompra);
+            this.mapCompraBindingSource.DataSource = typeof(papeSraErika.MapCompra);
             // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.DataPropertyName = "Id_venta";
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            this.dataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridViewTextBoxColumn1.HeaderText = "Codigo de Venta";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Id_venta";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Width = 200;
+            // 
+            // vendedorDataGridViewTextBoxColumn
+            // 
+            this.vendedorDataGridViewTextBoxColumn.DataPropertyName = "Vendedor";
+            this.vendedorDataGridViewTextBoxColumn.HeaderText = "Vendedor";
+            this.vendedorDataGridViewTextBoxColumn.Name = "vendedorDataGridViewTextBoxColumn";
+            this.vendedorDataGridViewTextBoxColumn.ReadOnly = true;
+            this.vendedorDataGridViewTextBoxColumn.Width = 200;
             // 
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.DataPropertyName = "Fecha_venta";
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            this.dataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridViewTextBoxColumn2.HeaderText = "Fecha";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Fecha_venta";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            this.dataGridViewTextBoxColumn2.Width = 250;
+            this.dataGridViewTextBoxColumn2.Width = 150;
             // 
             // dataGridViewTextBoxColumn3
             // 
             this.dataGridViewTextBoxColumn3.DataPropertyName = "Total";
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            this.dataGridViewTextBoxColumn3.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewTextBoxColumn3.HeaderText = "Total";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            this.dataGridViewTextBoxColumn3.Width = 150;
             // 
             // Compras
             // 
@@ -185,16 +181,14 @@ namespace papeSraErika
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Compras";
             this.Text = "Compras";
-            ((System.ComponentModel.ISupportInitialize)(this.mapCompraBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataTableVenta)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mapCompraBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mapCompraBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.BindingSource mapCompraBindingSource;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnDetalle;
         private System.Windows.Forms.Button button2;
@@ -204,9 +198,10 @@ namespace papeSraErika
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label ventaTotal;
         private System.Windows.Forms.DataGridView DataTableVenta;
-        private System.Windows.Forms.BindingSource mapCompraBindingSource1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn vendedorDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.BindingSource mapCompraBindingSource;
     }
 }

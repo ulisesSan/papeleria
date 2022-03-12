@@ -21,11 +21,21 @@ namespace papeSraErika
         }
         private void Tabla(string Data)
         {
+            string datoTotal=null;
             string fecha = DateTime.Now.ToString("yyy-MM-dd");
             List<object> lista = new List<object>();
             ventaControlador _ventas = new ventaControlador();
             DataTableVenta.DataSource = _ventas.Venta(Data);
-            ventaTotal.Text = systemQuerys.principalQuery("select sum(TOTAL) from ventas where FECHA ='"+fecha+"'");
+            datoTotal = systemQuerys.principalQuery("select sum(TOTAL) from ventas where FECHA ='" + fecha + "'");
+            if (datoTotal == null)
+            {
+                ventaTotal.Text = "0";
+            }
+            else
+            {
+                ventaTotal.Text = datoTotal;
+            }
+            
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)

@@ -19,7 +19,7 @@ namespace papeSraErika
 
             if (data == null)
             {
-                pQuery = "select * from ventas where FECHA like '%"+fecha+"%'";
+                pQuery = "select ventas.ID, ventas.FECHA,ventas.TOTAL,usuario.nombre from usuario, ventas where FECHA like '%"+fecha+"%' AND usuario.id = ventas.VENDEDOR";
             }
             else
             {
@@ -33,6 +33,7 @@ namespace papeSraErika
                 MapCompra _compra = new MapCompra();
 
                 _compra.Id_venta = int.Parse(reader.GetString(0));
+                _compra.Vendedor = reader.GetString(3);
                 _compra.Fecha_venta = DateTime.Parse(reader.GetString(1));
                 _compra.Total = reader.GetString(2);
                 _list.Add(_compra);

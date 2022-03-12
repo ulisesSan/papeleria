@@ -131,6 +131,7 @@ namespace papeSraErika
             this.ClientSize = new System.Drawing.Size(1246, 561);
             this.Controls.Add(this.panelCenter);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Princial";
             this.Text = "Form1";
