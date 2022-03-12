@@ -53,7 +53,7 @@ namespace papeSraErika
                     datoTotal = precioTotal.ToString();
                     _list += " $ " + precioTotal.ToString();
                     string Precio = res.GetString(6);
-                    float precioSum = float.Parse(lblTotal.Text) + float.Parse(Precio);
+                    float precioSum = float.Parse(lblTotal.Text) + precioTotal;
                     lblTotal.Text = precioSum.ToString("F2");
                     listBox1.Items.Add(_list + " Cantidad " + cantidadText.Text);
                     listBox1.SetSelected(0,true);
@@ -84,9 +84,9 @@ namespace papeSraErika
                 string curItem;
                 int id_prod;
                 int cantidad = int.Parse(cantidadText.Text);
-                string total = lblTotal.Text;
+                float total = float.Parse(lblTotal.Text);
                 string vendedor = systemQuerys.principalQuery("select id from usuario where estatus = 1");
-                systemQuerys.principalQuery("insert into ventas (FECHA,TOTAL,vendedor) values ('" + fecha + "','" + total.Replace(",", ".") + "','"+vendedor+"')");
+                systemQuerys.principalQuery("insert into ventas (FECHA,TOTAL,vendedor) values ('" + fecha + "','" + total + "','"+vendedor+"')");
 
                 for (int i = 1; i <= numData; i++)
                 {
@@ -117,6 +117,7 @@ namespace papeSraErika
         private void btnCancelar_Click(object sender, System.EventArgs e)
         {
             listBox1.Items.Remove(listBox1.SelectedItem);
+            lblTotal.Text = "0";
             selectItem();
         }
 
@@ -127,6 +128,7 @@ namespace papeSraErika
             {
                 listBox1.Items.Remove(listBox1.SelectedItem);
                 selectItem();
+                lblTotal.Text = "0";
             }
         }
 
