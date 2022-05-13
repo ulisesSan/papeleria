@@ -14,18 +14,18 @@ namespace papeSraErika
     {
         public Usuarios()
         {
+            string update;
             InitializeComponent();
+            update = "update usuario set estatus = 0";
+            systemQuerys.principalQuery(update);
         }
 
         private void btnAcept_Click(object sender, EventArgs e)
         {
+            string update2;
             string user = txtUser.Text;
             string pass = txtPassword.Text;
             string res;
-            string update;
-
-            update = "update usuario set estatus = 0";
-            systemQuerys.principalQuery(update);
 
             res = systemQuerys.principalQuery("select * from usuario where NOMBRE = '" + user + "' and contraseña = '" + pass + "'");
             
@@ -39,13 +39,13 @@ namespace papeSraErika
             {
                 if (res == null)
                 {
-                    MessageBox.Show("Contraseña o usuarios errones");
+                    MessageBox.Show("Contraseña o usuarios erroneos");
                 }
 
                 else
                 {
-                    update = "update usuario set estatus = 1 where nombre = '"+user+"'";
-                    systemQuerys.principalQuery(update);
+                    update2 = "update usuario set estatus = 1 where nombre = '"+user+"'";
+                    systemQuerys.principalQuery(update2);
                     Princial m = new Princial();
                     m.Show();
                     this.Hide();
