@@ -19,7 +19,10 @@ namespace papeSraErika
 
                 while (reader.Read())
                 {
-                    read = reader.GetString(0);
+                    if (reader.IsDBNull(0))
+                        read = null;
+                    else
+                        read = reader.GetString(0);
                     
                 }
             }

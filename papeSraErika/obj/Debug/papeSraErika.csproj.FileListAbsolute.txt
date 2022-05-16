@@ -46,7 +46,6 @@ C:\Users\Ulises Caceres\Documents\GitHub\sraEricaPape\papeSraErika\bin\Debug\Sys
 C:\Users\Ulises Caceres\Documents\GitHub\sraEricaPape\papeSraErika\bin\Debug\System.Numerics.Vectors.dll
 C:\Users\Ulises Caceres\Documents\GitHub\sraEricaPape\papeSraErika\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\Ulises Caceres\Documents\GitHub\sraEricaPape\papeSraErika\bin\Debug\Ubiety.Dns.Core.dll
-C:\Users\Ulises Caceres\Documents\GitHub\sraEricaPape\papeSraErika\bin\Debug\Zstandard.Net.dll
 C:\Users\Ulises Caceres\Documents\GitHub\sraEricaPape\papeSraErika\bin\Debug\Google.Protobuf.pdb
 C:\Users\Ulises Caceres\Documents\GitHub\sraEricaPape\papeSraErika\bin\Debug\Google.Protobuf.xml
 C:\Users\Ulises Caceres\Documents\GitHub\sraEricaPape\papeSraErika\bin\Debug\K4os.Compression.LZ4.xml
@@ -296,3 +295,5 @@ E:\Github\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.csproj.CopyComplete
 E:\Github\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.exe
 E:\Github\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.pdb
 E:\Github\sraEricaPape\papeSraErika\bin\Debug\ZstdNet.dll
+C:\Users\Ulises Caceres\Documents\Github\sraEricaPape\papeSraErika\bin\Debug\ZstdNet.dll
+C:\Users\Ulises Caceres\Documents\Github\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.csproj.SuggestedBindingRedirects.cache
