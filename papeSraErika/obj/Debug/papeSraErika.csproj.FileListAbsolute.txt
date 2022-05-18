@@ -96,7 +96,6 @@ D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\System.Memory.dll
 D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\System.Numerics.Vectors.dll
 D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
 D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\Ubiety.Dns.Core.dll
-D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\Zstandard.Net.dll
 D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\Google.Protobuf.pdb
 D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\Google.Protobuf.xml
 D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\K4os.Compression.LZ4.xml
@@ -297,3 +296,4 @@ E:\Github\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.pdb
 E:\Github\sraEricaPape\papeSraErika\bin\Debug\ZstdNet.dll
 C:\Users\Ulises Caceres\Documents\Github\sraEricaPape\papeSraErika\bin\Debug\ZstdNet.dll
 C:\Users\Ulises Caceres\Documents\Github\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.csproj.SuggestedBindingRedirects.cache
+D:\Github\sraEricaPape\papeSraErika\bin\Debug\ZstdNet.dll
