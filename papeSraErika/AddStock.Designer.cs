@@ -121,7 +121,7 @@ namespace papeSraErika
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Name = "AddStock";
-            this.Text = "AddStock";
+            this.Text = "Agregar Existencias";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -50,7 +50,7 @@ namespace papeSraErika
             this.Nombre.ForeColor = System.Drawing.Color.Transparent;
             this.Nombre.Location = new System.Drawing.Point(21, 23);
             this.Nombre.Name = "Nombre";
-            this.Nombre.Size = new System.Drawing.Size(57, 16);
+            this.Nombre.Size = new System.Drawing.Size(56, 16);
             this.Nombre.TabIndex = 0;
             this.Nombre.Text = "Nombre";
             // 
@@ -61,7 +61,7 @@ namespace papeSraErika
             this.Marca.ForeColor = System.Drawing.Color.Transparent;
             this.Marca.Location = new System.Drawing.Point(21, 61);
             this.Marca.Name = "Marca";
-            this.Marca.Size = new System.Drawing.Size(46, 16);
+            this.Marca.Size = new System.Drawing.Size(45, 16);
             this.Marca.TabIndex = 1;
             this.Marca.Text = "Marca";
             // 
@@ -72,7 +72,7 @@ namespace papeSraErika
             this.label3.ForeColor = System.Drawing.Color.Transparent;
             this.label3.Location = new System.Drawing.Point(21, 102);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(80, 16);
+            this.label3.Size = new System.Drawing.Size(79, 16);
             this.label3.TabIndex = 2;
             this.label3.Text = "Descripción";
             // 
@@ -83,7 +83,7 @@ namespace papeSraErika
             this.label4.ForeColor = System.Drawing.Color.Transparent;
             this.label4.Location = new System.Drawing.Point(21, 140);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(47, 16);
+            this.label4.Size = new System.Drawing.Size(46, 16);
             this.label4.TabIndex = 3;
             this.label4.Text = "Precio";
             // 
@@ -94,7 +94,7 @@ namespace papeSraErika
             this.label5.ForeColor = System.Drawing.Color.Transparent;
             this.label5.Location = new System.Drawing.Point(21, 182);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(42, 16);
+            this.label5.Size = new System.Drawing.Size(41, 16);
             this.label5.TabIndex = 4;
             this.label5.Text = "Stock";
             // 
@@ -187,7 +187,7 @@ namespace papeSraErika
             this.Controls.Add(this.Marca);
             this.Controls.Add(this.Nombre);
             this.Name = "editProduct";
-            this.Text = "editProduct";
+            this.Text = "Editar Producto";
             this.Load += new System.EventHandler(this.editProduct_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
