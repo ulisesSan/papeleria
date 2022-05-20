@@ -62,7 +62,15 @@ namespace papeSraErika
 
         private void btnNUser_Click(object sender, EventArgs e)
         {
-            Contrasena m = new Contrasena(null);
+            string barcode = null;
+            string barCode = null;
+            string Brand = null;
+            string Name = null;
+            string Desc = null;
+            string Price = null;
+            string Stock = null;
+
+            Contrasena m = new Contrasena(barcode, barCode, Name, Brand, Desc, Price, Stock);
             m.Show();
         }
     }

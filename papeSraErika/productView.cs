@@ -52,13 +52,16 @@ namespace papeSraErika
 
         private void editProduct_Click(object sender, EventArgs e)
         {
+
+
             string barCode = productTable.CurrentRow.Cells[0].Value.ToString();
             string name = productTable.CurrentRow.Cells[1].Value.ToString(); 
             string brand = productTable.CurrentRow.Cells[2].Value.ToString();
             string desc = productTable.CurrentRow.Cells[3].Value.ToString();
             string price = productTable.CurrentRow.Cells[4].Value.ToString();
             string stock = productTable.CurrentRow.Cells[5].Value.ToString();
-            editProduct M = new editProduct(barCode,name,brand,desc,price,stock);
+            string data = "3";
+            Contrasena M = new Contrasena(data,barCode,name,brand,desc,price,stock);
             M.barcode = barCode;
             M.name = name;
             M.brand1 = brand;
@@ -72,8 +75,14 @@ namespace papeSraErika
         private void btnDelete_Click(object sender, EventArgs e)
         {
             string barcode = productTable.CurrentRow.Cells[0].Value.ToString();
+            string barCode = null;
+            string Brand = null;
+            string Name = null;
+            string Desc = null;
+            string Price = null;
+            string Stock = null;
 
-            Contrasena m = new Contrasena(barcode);
+            Contrasena m = new Contrasena(barcode, barCode, Name, Brand, Desc ,Price, Stock);
 
             m.Show();
         }   

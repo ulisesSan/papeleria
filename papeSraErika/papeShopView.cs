@@ -162,5 +162,10 @@ namespace papeSraErika
                 lblCambio.Text = "0";
             }
         }
+
+        private void papeShopView_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -140,7 +140,7 @@ namespace papeSraErika
             this.lblCambio.AutoSize = true;
             this.lblCambio.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCambio.ForeColor = System.Drawing.Color.Transparent;
-            this.lblCambio.Location = new System.Drawing.Point(253, 465);
+            this.lblCambio.Location = new System.Drawing.Point(251, 447);
             this.lblCambio.Name = "lblCambio";
             this.lblCambio.Size = new System.Drawing.Size(0, 24);
             this.lblCambio.TabIndex = 14;
@@ -263,6 +263,7 @@ namespace papeSraErika
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "papeShopView";
             this.Text = "papeShopView";
+            this.Load += new System.EventHandler(this.papeShopView_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
