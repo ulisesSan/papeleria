@@ -46,6 +46,7 @@ namespace papeSraErika
             this.button3 = new System.Windows.Forms.Button();
             this.editProduct = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.barCodeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.brand1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -92,7 +93,7 @@ namespace papeSraErika
             // textSearch
             // 
             this.textSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textSearch.Location = new System.Drawing.Point(295, 79);
+            this.textSearch.Location = new System.Drawing.Point(365, 79);
             this.textSearch.Name = "textSearch";
             this.textSearch.Size = new System.Drawing.Size(347, 22);
             this.textSearch.TabIndex = 3;
@@ -103,7 +104,7 @@ namespace papeSraErika
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(213, 79);
+            this.label1.Location = new System.Drawing.Point(284, 79);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(59, 23);
             this.label1.TabIndex = 4;
@@ -191,6 +192,20 @@ namespace papeSraErika
             this.button1.Text = "Agregar Producto";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackgroundImage = global::papeSraErika.Properties.Resources.rojo;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(913, 497);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(125, 52);
+            this.button2.TabIndex = 10;
+            this.button2.Text = "Cerrar";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // barCodeDataGridViewTextBoxColumn
             // 
@@ -280,6 +295,7 @@ namespace papeSraErika
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Highlight;
             this.ClientSize = new System.Drawing.Size(1063, 561);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.addStock);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnDelete);
@@ -319,5 +335,6 @@ namespace papeSraErika
         private System.Windows.Forms.DataGridViewTextBoxColumn price1DataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn stock1DataGridViewTextBoxColumn;
         private System.Windows.Forms.Button addStock;
+        private System.Windows.Forms.Button button2;
     }
 }

@@ -6,11 +6,21 @@ namespace papeSraErika
 {
     public partial class productView : Form
     {
-
+        public int Inicio;
         public productView()
         {
             InitializeComponent();
             Table(null);
+            int inicio = Inicio;
+            MessageBox.Show(Inicio.ToString());
+            if (inicio != 1)
+            {
+                button2.Show();
+                FormBorderStyle = FormBorderStyle.SizableToolWindow;
+            }
+            else
+                button2.Hide();
+
         }
 
         public void Table(string data)
@@ -102,5 +112,10 @@ namespace papeSraErika
             AddStock m = new AddStock();
             m.Show();
             }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

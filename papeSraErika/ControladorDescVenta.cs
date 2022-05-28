@@ -23,7 +23,7 @@ namespace papeSraErika
             else
             {
                 string shopQ = "select " +
-                    "descripcion_venta.ID_VENTA,productos.NOMBRE,descripcion_venta.CANTIDAD, descripcion_venta.SUBTOTAL " +
+                    "productos.CODIGO_BARRAS,productos.NOMBRE,descripcion_venta.CANTIDAD, descripcion_venta.SUBTOTAL " +
                     "from productos,descripcion_venta " +
                     "where ID_VENTA like '" + data + "' and productos.ID_PRODUCTO = ID_PRD;";
 

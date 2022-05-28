@@ -7,6 +7,7 @@ namespace papeSraErika
 {
     public partial class papeShopView : Form
     {
+       
         public papeShopView()
         {
             InitializeComponent();
@@ -165,6 +166,14 @@ namespace papeSraErika
 
         private void papeShopView_Load(object sender, EventArgs e)
         {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            productView m = new productView();
+            m.Show();
+            m.Inicio = 1;
 
         }
     }

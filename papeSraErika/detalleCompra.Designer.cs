@@ -69,11 +69,11 @@ namespace papeSraErika
             this.cantidadDataGridViewTextBoxColumn,
             this.subtotalDataGridViewTextBoxColumn});
             this.DataDescVenta.DataSource = this.mapaDescVentaBindingSource;
-            this.DataDescVenta.Location = new System.Drawing.Point(85, 60);
+            this.DataDescVenta.Location = new System.Drawing.Point(62, 60);
             this.DataDescVenta.Name = "DataDescVenta";
             this.DataDescVenta.ReadOnly = true;
             this.DataDescVenta.RowHeadersVisible = false;
-            this.DataDescVenta.Size = new System.Drawing.Size(484, 242);
+            this.DataDescVenta.Size = new System.Drawing.Size(554, 242);
             this.DataDescVenta.TabIndex = 2;
             // 
             // mapaDescVentaBindingSource
@@ -83,10 +83,10 @@ namespace papeSraErika
             // idventaDataGridViewTextBoxColumn
             // 
             this.idventaDataGridViewTextBoxColumn.DataPropertyName = "Id_venta";
-            this.idventaDataGridViewTextBoxColumn.HeaderText = "Id_venta";
+            this.idventaDataGridViewTextBoxColumn.HeaderText = "Codigo de barras";
             this.idventaDataGridViewTextBoxColumn.Name = "idventaDataGridViewTextBoxColumn";
             this.idventaDataGridViewTextBoxColumn.ReadOnly = true;
-            this.idventaDataGridViewTextBoxColumn.Width = 80;
+            this.idventaDataGridViewTextBoxColumn.Width = 150;
             // 
             // nombreDataGridViewTextBoxColumn
             // 
@@ -130,10 +130,10 @@ namespace papeSraErika
 
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.DataGridView DataDescVenta;
+        private System.Windows.Forms.BindingSource mapaDescVentaBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn idventaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombreDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn cantidadDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn subtotalDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource mapaDescVentaBindingSource;
     }
 }

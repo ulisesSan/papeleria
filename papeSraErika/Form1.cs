@@ -15,6 +15,7 @@ namespace papeSraErika
         {
             Form form;
             form = panelCenter.Controls.OfType<secondForm>().FirstOrDefault();
+            
 
             if (form == null)
             {
@@ -65,7 +66,7 @@ namespace papeSraErika
 
         private void panelCenter_Paint(object sender, PaintEventArgs e)
         {
-
+            
         }
     }
 }
