@@ -12,7 +12,6 @@ namespace papeSraErika
             InitializeComponent();
             Table(null);
             int inicio = Inicio;
-            MessageBox.Show(Inicio.ToString());
             if (inicio != 1)
             {
                 button2.Show();
@@ -102,10 +101,6 @@ namespace papeSraErika
             Table(null);
         }
 
-        private void productView_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void addStock_Click(object sender, EventArgs e)
         {

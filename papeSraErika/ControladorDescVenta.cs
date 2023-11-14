@@ -1,9 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using MySql.Data.MySqlClient;
 using System.Windows.Forms;
 
 namespace papeSraErika
@@ -17,7 +13,10 @@ namespace papeSraErika
 
             if (data == null)
             {
-                MessageBox.Show("Algo ha salido mal, contacte al desarrollador");
+                MessageBox.Show("Algo ha salido mal, contacte al desarrollador",
+                    "Error",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
                 return _list;
             }
             else

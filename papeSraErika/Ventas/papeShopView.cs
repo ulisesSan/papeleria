@@ -1,7 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using papeSraErika.Ventas;
 
 namespace papeSraErika
 {
@@ -21,20 +21,21 @@ namespace papeSraErika
                 string code = textBox1.Text;
 
                 Table(code);
+                //addDataTable addTable = new addDataTable();
+                //addTable.Table(textBox1.Text);
                 textBox1.Text = "";
             }
         }
-        private void Table(string data)
+        public void Table(string data)
         {
             int bandera = 0;
             string sql = "select * from productos where CODIGO_BARRAS = '" + data + "'";
-            string _list = null;
+            string _list = "";
             
             MySqlDataReader res = systemQuerys.dataTable(sql);
             while (res.Read())
             {
-                string stock = res.GetString(5);
-                if(stock == "0")
+                if((res.GetString(5).Equals("0")))
                 {
                     MessageBox.Show("Este producto ya no tiene stock");
                     bandera = 1;
@@ -42,34 +43,21 @@ namespace papeSraErika
                 }
                 else
                 {
-                    float precioTotal;
-                    string datoTotal;
-                    _list = res.GetString(4);
-                    if(_list.Length != 13)
-                    {
-                        
-                    }
-                    _list += " " + res.GetString(1);
-                    precioTotal = float.Parse(res.GetString(6)) * float.Parse(cantidadText.Text);
-                    datoTotal = precioTotal.ToString();
-                    _list += " $ " + precioTotal.ToString();
-                    string Precio = res.GetString(6);
-                    float precioSum = float.Parse(lblTotal.Text) + precioTotal;
-                    lblTotal.Text = precioSum.ToString("F2");
-                    listBox1.Items.Add(_list + " Cantidad " + cantidadText.Text);
+                    _list += res.GetString(4) + " " + res.GetString(1) + " $ " + res.GetString(6);
+                    setTotalLabel(res.GetString(6));
+                    addListBox(_list);
                     listBox1.SetSelected(0,true);
                     bandera = 2;
-                    cantidadText.Text = "1";
                 }
                 
             }
             if(bandera == 0)
             {
-                MessageBox.Show("Porducto no encontrado");
+                MessageBox.Show("Producto no encontrado");
             }
         }
 
-        private void button2_Click(object sender, System.EventArgs e)
+        private void RealizarCompra(object sender, System.EventArgs e)
         {
             
             if (listBox1.Items.Count == 0)
@@ -84,7 +72,6 @@ namespace papeSraErika
                 int id_venta;
                 string curItem;
                 int id_prod;
-                int cantidad = int.Parse(cantidadText.Text);
                 float total = float.Parse(lblTotal.Text);
                 string vendedor = systemQuerys.principalQuery("select id from usuario where estatus = 1");
                 systemQuerys.principalQuery("insert into ventas (FECHA,TOTAL,vendedor) values ('" + fecha + "','" + total + "','"+vendedor+"')");
@@ -164,17 +151,22 @@ namespace papeSraErika
             }
         }
 
-        private void papeShopView_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void VerProductos_Click(object sender, EventArgs e)
         {
             productView m = new productView();
             m.Show();
             m.Inicio = 1;
+        }
 
+        public void setTotalLabel(String data)
+        {
+            lblTotal.Text = (float.Parse(lblTotal.Text) + float.Parse(data)).ToString();
+        }
+
+        public void addListBox(String items)
+        {
+            listBox1.Items.Add(items);
+            listBox1.SetSelected(0, true);
         }
     }
 }

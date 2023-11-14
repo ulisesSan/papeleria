@@ -68,6 +68,12 @@ namespace papeSraErika
                         this.Close();
 
                         break;
+                    default:
+                        MessageBox.Show("Ha ocurrido un error, contacte al desarrollador",
+                            "Error",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Error);
+                        break;
                 }
                 
             }

@@ -309,7 +309,6 @@ namespace papeSraErika
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "productView";
             this.Text = "productView";
-            this.Load += new System.EventHandler(this.productView_Load);
             ((System.ComponentModel.ISupportInitialize)(this.productTable)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productMapBindingSource)).EndInit();
             this.ResumeLayout(false);
