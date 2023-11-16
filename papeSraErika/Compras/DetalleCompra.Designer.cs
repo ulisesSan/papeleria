@@ -78,7 +78,7 @@ namespace papeSraErika
             // 
             // mapaDescVentaBindingSource
             // 
-            this.mapaDescVentaBindingSource.DataSource = typeof(papeSraErika.MapaDescVenta);
+            this.mapaDescVentaBindingSource.DataSource = typeof(papeSraErika.MapaDescCompra);
             // 
             // idventaDataGridViewTextBoxColumn
             // 

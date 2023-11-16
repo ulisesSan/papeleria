@@ -3,7 +3,7 @@ using MySql.Data.MySqlClient;
 
 namespace papeSraErika 
 {
-    class systemQuerys : DataConection
+    class SystemQuerys : DataConection
     {
         public static string principalQuery(string Query)
         {

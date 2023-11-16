@@ -7,7 +7,7 @@ using MySql.Data.MySqlClient;
 
 namespace papeSraErika
 {
-    class dataConection
+    class DataConection
     {
         public static MySqlConnection dataConnect()
         {

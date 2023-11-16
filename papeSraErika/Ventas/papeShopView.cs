@@ -6,10 +6,7 @@ using papeSraErika.Ventas;
 namespace papeSraErika
 {
     public partial class papeShopView : Form
-    {
-        private string Total;
-        private string Items;
-       
+    {  
         public papeShopView()
         {
             InitializeComponent();
@@ -48,8 +45,8 @@ namespace papeSraErika
                 string curItem;
                 int id_prod;
                 float total = float.Parse(lblTotal.Text);
-                string vendedor = systemQuerys.principalQuery("select id from usuario where estatus = 1");
-                systemQuerys.principalQuery("insert into ventas (FECHA,TOTAL,vendedor) values ('" + fecha + "','" + total + "','"+vendedor+"')");
+                string vendedor = SystemQuerys.principalQuery("select id from usuario where estatus = 1");
+                SystemQuerys.principalQuery("insert into ventas (FECHA,TOTAL,vendedor) values ('" + fecha + "','" + total + "','"+vendedor+"')");
 
                 for (int i = 1; i <= numData; i++)
                 {
@@ -58,11 +55,11 @@ namespace papeSraErika
                         curItem = listBox1.SelectedItem.ToString();
                         string[] codigo = curItem.Split(' ');
                         string last = codigo[codigo.Length - 1];
-                        id_venta = int.Parse(systemQuerys.principalQuery("select max(id) from ventas"));
-                        id_prod = int.Parse(systemQuerys.principalQuery("select ID_PRODUCTO from productos where CODIGO_BARRAS = '" + codigo[0] + "'"));
-                        systemQuerys.principalQuery("insert into descripcion_venta(ID_PRD,ID_VENTA,CANTIDAD,SUBTOTAL)" +
+                        id_venta = int.Parse(SystemQuerys.principalQuery("select max(id) from ventas"));
+                        id_prod = int.Parse(SystemQuerys.principalQuery("select ID_PRODUCTO from productos where CODIGO_BARRAS = '" + codigo[0] + "'"));
+                        SystemQuerys.principalQuery("insert into descripcion_venta(ID_PRD,ID_VENTA,CANTIDAD,SUBTOTAL)" +
                             " values('" + id_prod + "','" + id_venta + "',1,'" + float.Parse(last) + "')");
-                        systemQuerys.principalQuery("update productos set STOCK = STOCK - '1' where CODIGO_BARRAS='" + codigo[0] + "'");
+                        SystemQuerys.principalQuery("update productos set STOCK = STOCK - '1' where CODIGO_BARRAS='" + codigo[0] + "'");
                         listBox1.Items.Remove(listBox1.SelectedItem);
                         selectItem();
                         lblTotal.Text = "0";
@@ -128,9 +125,10 @@ namespace papeSraErika
 
         private void VerProductos_Click(object sender, EventArgs e)
         {
-            productView m = new productView();
-            m.Show();
-            m.Inicio = 1;
+            ProductView productos = new ProductView();
+            productos.Inicio = 1;
+            productos.Show();
+            //productos.Inicio = 1;
         }
     }
 }

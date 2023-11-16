@@ -4,7 +4,7 @@ using MySql.Data.MySqlClient;
 
 namespace papeSraErika
 {
-    class ShopController : dataConection
+    class ShopController : DataConection
     {
         public List<object> shopQuery(string data)
         {
@@ -20,7 +20,7 @@ namespace papeSraErika
             {
                 string shopQ = "select * from Productos";
 
-                reader = systemQuerys.dataTable(shopQ);
+                reader = SystemQuerys.dataTable(shopQ);
 
                 while (reader.Read())
                 {

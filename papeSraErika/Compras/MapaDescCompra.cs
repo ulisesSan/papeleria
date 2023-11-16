@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace papeSraErika
 {
-    class MapaDescVenta
+    class MapaDescCompra
     {
         private string id_venta;
         private string nombre;

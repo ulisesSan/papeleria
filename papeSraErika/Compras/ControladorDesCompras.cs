@@ -4,7 +4,7 @@ using System.Windows.Forms;
 
 namespace papeSraErika
 {
-    class ControladorDescVenta : DataConection
+    class ControladorDesCompras : DataConection
     {
         public List<object> descVenta(string data)
         {
@@ -30,7 +30,7 @@ namespace papeSraErika
 
                 while (reader.Read())
                 {
-                    MapaDescVenta _shop = new MapaDescVenta();
+                    MapaDescCompra _shop = new MapaDescCompra();
 
                     _shop.Id_venta = reader.GetString(0);
                     _shop.Nombre = reader.GetString(1);

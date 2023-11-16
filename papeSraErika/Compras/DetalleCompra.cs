@@ -1,11 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace papeSraErika
@@ -16,7 +10,7 @@ namespace papeSraErika
         public DetalleCompra(string _codigo)
         {
             InitializeComponent();
-            DetalleCompra(_codigo);
+            detalleCompra(_codigo);
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -24,10 +18,10 @@ namespace papeSraErika
             this.Close();
         }
 
-        public void DetalleCompra(string data)
+        public void detalleCompra(string data)
         {
             List<object> lista = new List<object>();
-            ControladorDescVenta _products = new ControladorDescVenta();
+            ControladorDesCompras _products = new ControladorDesCompras();
             DataDescVenta.DataSource = _products.descVenta(data);
         }
     }

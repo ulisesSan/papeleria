@@ -1,13 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 
 namespace papeSraErika
 {
-    class ventaControlador : DataConection
+    class CompraControlador : DataConection
     {
          
         public List<object> Venta(string data)
@@ -19,7 +16,8 @@ namespace papeSraErika
 
             if (data == null)
             {
-                pQuery = "select ventas.ID, ventas.FECHA,ventas.TOTAL,usuario.nombre from usuario, ventas where FECHA like '%"+fecha+"%' AND usuario.id = ventas.VENDEDOR";
+                pQuery = "select ventas.ID, ventas.FECHA,ventas.TOTAL,usuario.nombre from usuario," +
+                    "ventas where FECHA like '%"+fecha+"%' AND usuario.id = ventas.VENDEDOR";
             }
             else
             {

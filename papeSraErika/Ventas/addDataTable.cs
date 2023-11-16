@@ -10,7 +10,7 @@ namespace papeSraErika.Ventas
             string sql = "select * from productos where CODIGO_BARRAS = '" + data + "'";
             string _list = "";
 
-            MySqlDataReader res = systemQuerys.dataTable(sql);
+            MySqlDataReader res = SystemQuerys.dataTable(sql);
             while (res.Read())
             {
                 if (res.GetString(5).Equals(null))

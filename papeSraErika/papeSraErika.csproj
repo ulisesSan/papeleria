@@ -93,56 +93,56 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddProduct.cs">
+    <Compile Include="Productos\AddProduct.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddProduct.Designer.cs">
+    <Compile Include="Productos\AddProduct.Designer.cs">
       <DependentUpon>AddProduct.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddStock.cs">
+    <Compile Include="Productos\AddStock.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddStock.Designer.cs">
+    <Compile Include="Productos\AddStock.Designer.cs">
       <DependentUpon>AddStock.cs</DependentUpon>
     </Compile>
-    <Compile Include="Compras.cs">
+    <Compile Include="Compras\Compras.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Compras.Designer.cs">
+    <Compile Include="Compras\Compras.Designer.cs">
       <DependentUpon>Compras.cs</DependentUpon>
     </Compile>
-    <Compile Include="Contrasena.cs">
+    <Compile Include="Usuarios\Contrasena.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Contrasena.Designer.cs">
+    <Compile Include="Usuarios\Contrasena.Designer.cs">
       <DependentUpon>Contrasena.cs</DependentUpon>
     </Compile>
-    <Compile Include="ControladorDescVenta.cs" />
-    <Compile Include="MapaDescVenta.cs" />
-    <Compile Include="dataConection.cs" />
-    <Compile Include="detalleCompra.cs">
+    <Compile Include="Compras\ControladorDesCompras.cs" />
+    <Compile Include="Compras\MapaDescCompra.cs" />
+    <Compile Include="Conexion\DataConection.cs" />
+    <Compile Include="Compras\DetalleCompra.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="detalleCompra.Designer.cs">
-      <DependentUpon>detalleCompra.cs</DependentUpon>
+    <Compile Include="Compras\DetalleCompra.Designer.cs">
+      <DependentUpon>DetalleCompra.cs</DependentUpon>
     </Compile>
-    <Compile Include="editProduct.cs">
+    <Compile Include="Productos\EditProduct.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="editProduct.Designer.cs">
-      <DependentUpon>editProduct.cs</DependentUpon>
+    <Compile Include="Productos\EditProduct.Designer.cs">
+      <DependentUpon>EditProduct.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="VentanaPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="VentanaPrincipal.Designer.cs">
+      <DependentUpon>VentanaPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="MapCompra.cs" />
-    <Compile Include="NuevoUsuario.cs">
+    <Compile Include="Compras\MapCompra.cs" />
+    <Compile Include="Usuarios\NuevoUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NuevoUsuario.Designer.cs">
+    <Compile Include="Usuarios\NuevoUsuario.Designer.cs">
       <DependentUpon>NuevoUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="Ventas\AddDataTable.cs" />
@@ -152,55 +152,55 @@
     <Compile Include="Ventas\papeShopView.Designer.cs">
       <DependentUpon>papeShopView.cs</DependentUpon>
     </Compile>
-    <Compile Include="productController.cs" />
-    <Compile Include="productMap.cs" />
-    <Compile Include="productView.cs">
+    <Compile Include="Productos\ProductController.cs" />
+    <Compile Include="Productos\ProductMap.cs" />
+    <Compile Include="Productos\ProductView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="productView.Designer.cs">
-      <DependentUpon>productView.cs</DependentUpon>
+    <Compile Include="Productos\ProductView.Designer.cs">
+      <DependentUpon>ProductView.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Ventas\ShopController.cs" />
     <Compile Include="Ventas\ShopMap.cs" />
-    <Compile Include="systemQuerys.cs" />
-    <Compile Include="Usuarios.cs">
+    <Compile Include="Conexion\SystemQuerys.cs" />
+    <Compile Include="Usuarios\Usuarios.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Usuarios.Designer.cs">
+    <Compile Include="Usuarios\Usuarios.Designer.cs">
       <DependentUpon>Usuarios.cs</DependentUpon>
     </Compile>
-    <Compile Include="ventaControlador.cs" />
-    <EmbeddedResource Include="AddProduct.resx">
+    <Compile Include="Compras\CompraControlador.cs" />
+    <EmbeddedResource Include="Productos\AddProduct.resx">
       <DependentUpon>AddProduct.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddStock.resx">
+    <EmbeddedResource Include="Productos\AddStock.resx">
       <DependentUpon>AddStock.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Compras.resx">
+    <EmbeddedResource Include="Compras\Compras.resx">
       <DependentUpon>Compras.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Contrasena.resx">
+    <EmbeddedResource Include="Usuarios\Contrasena.resx">
       <DependentUpon>Contrasena.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="detalleCompra.resx">
-      <DependentUpon>detalleCompra.cs</DependentUpon>
+    <EmbeddedResource Include="Compras\DetalleCompra.resx">
+      <DependentUpon>DetalleCompra.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="editProduct.resx">
-      <DependentUpon>editProduct.cs</DependentUpon>
+    <EmbeddedResource Include="Productos\EditProduct.resx">
+      <DependentUpon>EditProduct.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="VentanaPrincipal.resx">
+      <DependentUpon>VentanaPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NuevoUsuario.resx">
+    <EmbeddedResource Include="Usuarios\NuevoUsuario.resx">
       <DependentUpon>NuevoUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ventas\papeShopView.resx">
       <DependentUpon>papeShopView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="productView.resx">
-      <DependentUpon>productView.cs</DependentUpon>
+    <EmbeddedResource Include="Productos\ProductView.resx">
+      <DependentUpon>ProductView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -212,7 +212,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Usuarios.resx">
+    <EmbeddedResource Include="Usuarios\Usuarios.resx">
       <DependentUpon>Usuarios.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />

@@ -17,9 +17,9 @@ namespace papeSraErika
             string datoTotal=null;
             string fecha = DateTime.Now.ToString("yyy-MM-dd");
             List<object> lista = new List<object>();
-            ventaControlador _ventas = new ventaControlador();
+            CompraControlador _ventas = new CompraControlador();
             DataTableVenta.DataSource = _ventas.Venta(Data);
-            datoTotal = systemQuerys.principalQuery("select sum(TOTAL) from ventas where FECHA ='" + fecha + "'");
+            datoTotal = SystemQuerys.principalQuery("select sum(TOTAL) from ventas where FECHA ='" + fecha + "'");
             if (datoTotal == null)
             {
                 ventaTotal.Text = "0";
@@ -39,7 +39,7 @@ namespace papeSraErika
 
         private void btnDetalle_Click(object sender, EventArgs e)
         {
-            detalleCompra M = new detalleCompra(DataTableVenta.CurrentRow.Cells[0].Value.ToString());
+            DetalleCompra M = new DetalleCompra(DataTableVenta.CurrentRow.Cells[0].Value.ToString());
             M.codigo = DataTableVenta.CurrentRow.Cells[0].ToString();
             M.Show();
         }

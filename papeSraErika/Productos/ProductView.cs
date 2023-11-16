@@ -6,7 +6,7 @@ namespace papeSraErika
 {
     public partial class ProductView : Form
     {
-        public int Inicio;
+        public int Inicio = 0;
         public ProductView()
         {
             InitializeComponent();
@@ -14,11 +14,11 @@ namespace papeSraErika
             int inicio = Inicio;
             if (inicio != 1)
             {
-                button2.Show();
+                CerrarBtn.Show();
                 FormBorderStyle = FormBorderStyle.SizableToolWindow;
             }
             else
-                button2.Hide();
+                CerrarBtn.Hide();
 
         }
 
@@ -48,10 +48,6 @@ namespace papeSraErika
             M.Show();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
 
 
         public void button3_Click(object sender, EventArgs e)
