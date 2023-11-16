@@ -39,9 +39,13 @@ namespace papeSraErika
 
         private void btnDetalle_Click(object sender, EventArgs e)
         {
-            DetalleCompra M = new DetalleCompra(DataTableVenta.CurrentRow.Cells[0].Value.ToString());
-            M.codigo = DataTableVenta.CurrentRow.Cells[0].ToString();
-            M.Show();
+            if(DataTableVenta.Rows.Count == 0)
+            {
+                DetalleCompra M = new DetalleCompra(DataTableVenta.CurrentRow.Cells[0].Value.ToString());
+                M.codigo = DataTableVenta.CurrentRow.Cells[0].ToString();
+                M.Show();
+            }
+                
         }
 
         private void button2_Click(object sender, EventArgs e)

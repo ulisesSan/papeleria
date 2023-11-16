@@ -6,20 +6,11 @@ namespace papeSraErika
 {
     public partial class ProductView : Form
     {
-        public int Inicio = 0;
         public ProductView()
         {
             InitializeComponent();
             Table(null);
-            int inicio = Inicio;
-            if (inicio != 1)
-            {
-                CerrarBtn.Show();
-                FormBorderStyle = FormBorderStyle.SizableToolWindow;
-            }
-            else
-                CerrarBtn.Hide();
-
+            
         }
 
         public void Table(string data)

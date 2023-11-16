@@ -126,7 +126,6 @@ namespace papeSraErika
         private void VerProductos_Click(object sender, EventArgs e)
         {
             ProductView productos = new ProductView();
-            productos.Inicio = 1;
             productos.Show();
             //productos.Inicio = 1;
         }

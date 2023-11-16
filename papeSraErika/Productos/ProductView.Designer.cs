@@ -30,7 +30,7 @@ namespace papeSraErika
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.productTable = new System.Windows.Forms.DataGridView();
             this.textSearch = new System.Windows.Forms.TextBox();
             this.BuscarLbl = new System.Windows.Forms.Label();
@@ -40,12 +40,11 @@ namespace papeSraErika
             this.ActualizarBtn = new System.Windows.Forms.Button();
             this.EditarProducto = new System.Windows.Forms.Button();
             this.AgregarBtn = new System.Windows.Forms.Button();
-            this.CerrarBtn = new System.Windows.Forms.Button();
-            this.productMapBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.barCodeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.price1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.stock1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productMapBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.productTable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productMapBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -68,14 +67,14 @@ namespace papeSraErika
             this.productTable.Margin = new System.Windows.Forms.Padding(4);
             this.productTable.Name = "productTable";
             this.productTable.ReadOnly = true;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.productTable.RowHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.productTable.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.productTable.RowHeadersVisible = false;
             this.productTable.RowHeadersWidth = 51;
             this.productTable.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
@@ -123,7 +122,7 @@ namespace papeSraErika
             this.AgregarStock.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.AgregarStock.FlatAppearance.BorderSize = 0;
             this.AgregarStock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AgregarStock.Location = new System.Drawing.Point(1217, 192);
+            this.AgregarStock.Location = new System.Drawing.Point(1217, 277);
             this.AgregarStock.Margin = new System.Windows.Forms.Padding(4);
             this.AgregarStock.Name = "AgregarStock";
             this.AgregarStock.Size = new System.Drawing.Size(167, 48);
@@ -139,10 +138,10 @@ namespace papeSraErika
             this.ElimunarBtn.FlatAppearance.BorderSize = 0;
             this.ElimunarBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ElimunarBtn.ForeColor = System.Drawing.Color.White;
-            this.ElimunarBtn.Location = new System.Drawing.Point(1217, 394);
+            this.ElimunarBtn.Location = new System.Drawing.Point(1217, 600);
             this.ElimunarBtn.Margin = new System.Windows.Forms.Padding(4);
             this.ElimunarBtn.Name = "ElimunarBtn";
-            this.ElimunarBtn.Size = new System.Drawing.Size(167, 53);
+            this.ElimunarBtn.Size = new System.Drawing.Size(167, 48);
             this.ElimunarBtn.TabIndex = 6;
             this.ElimunarBtn.Text = "Eliminar";
             this.ElimunarBtn.UseVisualStyleBackColor = false;
@@ -150,14 +149,14 @@ namespace papeSraErika
             // 
             // ActualizarBtn
             // 
-            this.ActualizarBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.ActualizarBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.ActualizarBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ActualizarBtn.FlatAppearance.BorderSize = 0;
             this.ActualizarBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ActualizarBtn.Location = new System.Drawing.Point(1217, 501);
+            this.ActualizarBtn.Location = new System.Drawing.Point(1217, 386);
             this.ActualizarBtn.Margin = new System.Windows.Forms.Padding(4);
             this.ActualizarBtn.Name = "ActualizarBtn";
-            this.ActualizarBtn.Size = new System.Drawing.Size(167, 64);
+            this.ActualizarBtn.Size = new System.Drawing.Size(167, 48);
             this.ActualizarBtn.TabIndex = 5;
             this.ActualizarBtn.Text = "Actualizar";
             this.ActualizarBtn.UseVisualStyleBackColor = false;
@@ -169,10 +168,10 @@ namespace papeSraErika
             this.EditarProducto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.EditarProducto.FlatAppearance.BorderSize = 0;
             this.EditarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.EditarProducto.Location = new System.Drawing.Point(1217, 282);
+            this.EditarProducto.Location = new System.Drawing.Point(1217, 499);
             this.EditarProducto.Margin = new System.Windows.Forms.Padding(4);
             this.EditarProducto.Name = "EditarProducto";
-            this.EditarProducto.Size = new System.Drawing.Size(167, 60);
+            this.EditarProducto.Size = new System.Drawing.Size(167, 46);
             this.EditarProducto.TabIndex = 2;
             this.EditarProducto.Text = "Editar";
             this.EditarProducto.UseVisualStyleBackColor = false;
@@ -184,7 +183,7 @@ namespace papeSraErika
             this.AgregarBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.AgregarBtn.FlatAppearance.BorderSize = 0;
             this.AgregarBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AgregarBtn.Location = new System.Drawing.Point(1217, 97);
+            this.AgregarBtn.Location = new System.Drawing.Point(1217, 169);
             this.AgregarBtn.Margin = new System.Windows.Forms.Padding(4);
             this.AgregarBtn.Name = "AgregarBtn";
             this.AgregarBtn.Size = new System.Drawing.Size(167, 48);
@@ -192,25 +191,6 @@ namespace papeSraErika
             this.AgregarBtn.Text = "Agregar Producto";
             this.AgregarBtn.UseVisualStyleBackColor = false;
             this.AgregarBtn.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // CerrarBtn
-            // 
-            this.CerrarBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.CerrarBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.CerrarBtn.FlatAppearance.BorderSize = 0;
-            this.CerrarBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CerrarBtn.Location = new System.Drawing.Point(1217, 612);
-            this.CerrarBtn.Margin = new System.Windows.Forms.Padding(4);
-            this.CerrarBtn.Name = "CerrarBtn";
-            this.CerrarBtn.Size = new System.Drawing.Size(167, 64);
-            this.CerrarBtn.TabIndex = 10;
-            this.CerrarBtn.Text = "Cerrar";
-            this.CerrarBtn.UseVisualStyleBackColor = false;
-            this.CerrarBtn.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // productMapBindingSource
-            // 
-            this.productMapBindingSource.DataSource = typeof(papeSraErika.ProductMap);
             // 
             // barCodeDataGridViewTextBoxColumn
             // 
@@ -248,13 +228,16 @@ namespace papeSraErika
             this.stock1DataGridViewTextBoxColumn.ReadOnly = true;
             this.stock1DataGridViewTextBoxColumn.Width = 200;
             // 
+            // productMapBindingSource
+            // 
+            this.productMapBindingSource.DataSource = typeof(papeSraErika.ProductMap);
+            // 
             // ProductView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Highlight;
             this.ClientSize = new System.Drawing.Size(1417, 690);
-            this.Controls.Add(this.CerrarBtn);
             this.Controls.Add(this.AgregarStock);
             this.Controls.Add(this.Productos);
             this.Controls.Add(this.ElimunarBtn);
@@ -287,7 +270,6 @@ namespace papeSraErika
         private System.Windows.Forms.Button ElimunarBtn;
         private System.Windows.Forms.Label Productos;
         private System.Windows.Forms.Button AgregarStock;
-        private System.Windows.Forms.Button CerrarBtn;
         private System.Windows.Forms.BindingSource productMapBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn barCodeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn productNameDataGridViewTextBoxColumn;
