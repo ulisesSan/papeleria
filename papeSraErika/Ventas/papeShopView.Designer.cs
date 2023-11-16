@@ -30,7 +30,7 @@ namespace papeSraErika
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.barCodeText = new System.Windows.Forms.TextBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -58,17 +58,17 @@ namespace papeSraErika
             this.label1.TabIndex = 0;
             this.label1.Text = "Ventas";
             // 
-            // textBox1
+            // barCodeText
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.Black;
-            this.textBox1.HideSelection = false;
-            this.textBox1.Location = new System.Drawing.Point(135, 490);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(167, 34);
-            this.textBox1.TabIndex = 2;
-            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
+            this.barCodeText.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.barCodeText.ForeColor = System.Drawing.Color.Black;
+            this.barCodeText.HideSelection = false;
+            this.barCodeText.Location = new System.Drawing.Point(135, 490);
+            this.barCodeText.Margin = new System.Windows.Forms.Padding(4);
+            this.barCodeText.Name = "barCodeText";
+            this.barCodeText.Size = new System.Drawing.Size(167, 34);
+            this.barCodeText.TabIndex = 2;
+            this.barCodeText.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // listBox1
             // 
@@ -239,11 +239,10 @@ namespace papeSraErika
             this.VerProductos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.VerProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.VerProductos.ForeColor = System.Drawing.Color.White;
-            this.VerProductos.Image = global::papeSraErika.Properties.Resources.amarillo;
             this.VerProductos.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.VerProductos.Location = new System.Drawing.Point(1042, 619);
+            this.VerProductos.Location = new System.Drawing.Point(1001, 619);
             this.VerProductos.Name = "VerProductos";
-            this.VerProductos.Size = new System.Drawing.Size(179, 57);
+            this.VerProductos.Size = new System.Drawing.Size(220, 57);
             this.VerProductos.TabIndex = 19;
             this.VerProductos.Text = "Ver Productos";
             this.VerProductos.UseVisualStyleBackColor = false;
@@ -267,7 +266,7 @@ namespace papeSraErika
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnCancelAll);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.barCodeText);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -283,7 +282,7 @@ namespace papeSraErika
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox barCodeText;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnCancelAll;

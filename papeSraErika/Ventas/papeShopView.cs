@@ -7,6 +7,8 @@ namespace papeSraErika
 {
     public partial class papeShopView : Form
     {
+        private string Total;
+        private string Items;
        
         public papeShopView()
         {
@@ -18,12 +20,14 @@ namespace papeSraErika
         {
             if (e.KeyChar == (char)(13))
             {
-                string code = textBox1.Text;
+                addDataTable addTable = new addDataTable();
+                string resultado = "";
+                string[] itemsProcesed = (resultado = (addTable.Table(barCodeText.Text))).Split(' ');
+                lblTotal.Text = (float.Parse(lblTotal.Text) + float.Parse(itemsProcesed[itemsProcesed.Length - 1])).ToString();
+                listBox1.Items.Add(resultado);
+                barCodeText.Text = "";
 
-                Table(code);
-                //addDataTable addTable = new addDataTable();
-                //addTable.Table(textBox1.Text);
-                textBox1.Text = "";
+
             }
         }
         public void Table(string data)
@@ -39,7 +43,6 @@ namespace papeSraErika
                 {
                     MessageBox.Show("Este producto ya no tiene stock");
                     bandera = 1;
-
                 }
                 else
                 {
@@ -49,7 +52,6 @@ namespace papeSraErika
                     listBox1.SetSelected(0,true);
                     bandera = 2;
                 }
-                
             }
             if(bandera == 0)
             {
@@ -158,15 +160,18 @@ namespace papeSraErika
             m.Inicio = 1;
         }
 
-        public void setTotalLabel(String data)
+        public void setTotalLabel(string total)
         {
-            lblTotal.Text = (float.Parse(lblTotal.Text) + float.Parse(data)).ToString();
+            Total = total;
+            lblTotal.Text = (float.Parse(lblTotal.Text) + float.Parse(Total)).ToString();
         }
 
-        public void addListBox(String items)
+        public void addListBox(string items)
         {
-            listBox1.Items.Add(items);
+            Items = items;
+            listBox1.Items.Add(Items);
             listBox1.SetSelected(0, true);
+            barCodeText.Text = "";
         }
     }
 }

@@ -6,7 +6,7 @@ namespace papeSraErika.Ventas
 {
     class addDataTable
     {
-        public void Table(string data)
+        public string Table(string data)
         {
             papeShopView pape = new papeShopView();
             int bandera = 0;
@@ -21,13 +21,13 @@ namespace papeSraErika.Ventas
                 {
                     MessageBox.Show("Este producto ya no tiene stock");
                     bandera = 1;
-
+                    return null;
                 }
                 else
                 {
                     _list += res.GetString(4) + " " + res.GetString(1) + " $ " + res.GetString(6);
                     pape.setTotalLabel(res.GetString(6));
-                    pape.addListBox(_list);
+                    // (res.GetString(4) + " " + res.GetString(1) + " $ " + res.GetString(6));
                     bandera = 2;
                     cantidadText = "1";
                 }
@@ -36,7 +36,9 @@ namespace papeSraErika.Ventas
             if (bandera == 0)
             {
                 MessageBox.Show("Producto no encontrado");
+                return null;
             }
+                return _list;
         }
     }
 }
