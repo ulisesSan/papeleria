@@ -94,13 +94,9 @@ namespace papeSraErika
 
         private void selectItem()
         {
-            try
+            if(listBox1.Items.Count != 0)
             {
                 listBox1.SetSelected(0, true);
-            }
-            catch
-            {
-
             }
         }
 
@@ -127,7 +123,6 @@ namespace papeSraErika
         {
             ProductView productos = new ProductView();
             productos.Show();
-            //productos.Inicio = 1;
         }
     }
 }
