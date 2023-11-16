@@ -14,8 +14,8 @@ namespace papeSraErika
         [STAThread]
         static void Main()
         {
-            systemQuerys.principalQuery("describe productos");
-            systemQuerys.Copia();
+            SystemQuerys.principalQuery("describe productos");
+            SystemQuerys.Copia();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Usuarios());

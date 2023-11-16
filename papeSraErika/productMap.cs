@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace papeSraErika
 {
-    class productMap
+    class ProductMap
     {
         private string barCode;
         private string productName;

@@ -50,14 +50,14 @@ namespace papeSraErika
                         DialogResult sino = MessageBox.Show("¿Esta seguro de eliminar este producto?", "Agregar otro producto", MessageBoxButtons.YesNo);
                         if (sino == DialogResult.Yes)
                         {
-                            systemQuerys.principalQuery(sql);
+                            SystemQuerys.principalQuery(sql);
                             MessageBox.Show("Producto eliminado con exito");
                             this.Close();
                         }
                         break;
 
                     case 3:
-                        editProduct M = new editProduct(barcode, name, brand1, desc, price, stock);
+                        EditProduct M = new EditProduct(barcode, name, brand1, desc, price, stock);
                         M.barcode = barcode;
                         M.name = name;
                         M.brand1 = brand1;

@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 namespace papeSraErika
 {
-    public partial class editProduct : Form
+    public partial class EditProduct : Form
     {
         public string barcode;
         public string name;
@@ -12,7 +12,7 @@ namespace papeSraErika
         public string price;
         public string stock;
 
-        public editProduct(string barCode, string Name, string Brand, string Desc, string Price, string Stock)
+        public EditProduct(string barCode, string Name, string Brand, string Desc, string Price, string Stock)
         {
             InitializeComponent();
             barcode = barCode;
@@ -51,7 +51,7 @@ namespace papeSraErika
             string sql = "UPDATE productos set NOMBRE = '" + saveName + "',MARCA = '" + saveBrand + "',DESCRIPCION = '" + saveDesc + "',STOCK = '" + saveStock + "'" +
                 ",PRECIO = '" + savePrice + "' where CODIGO_BARRAS = '" + barcode + "';";
 
-            systemQuerys.principalQuery(sql);
+            SystemQuerys.principalQuery(sql);
             
 
             this.Close();

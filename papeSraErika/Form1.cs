@@ -36,12 +36,12 @@ namespace papeSraErika
 
         public void btnProduct_Click(object sender, EventArgs e)
         {
-            openForm<productView>();
+            openForm<ProductView>();
         }
 
         public void updateForm()
         {
-            openForm<productView>();
+            openForm<ProductView>();
         }
 
         private void Venta_Click(object sender, EventArgs e)

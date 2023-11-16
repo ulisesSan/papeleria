@@ -7,7 +7,7 @@ using MySql.Data.MySqlClient;
 
 namespace papeSraErika
 {
-    class ventaControlador : dataConection
+    class ventaControlador : DataConection
     {
          
         public List<object> Venta(string data)
@@ -26,7 +26,7 @@ namespace papeSraErika
                 pQuery = "select * from Productos " +
                 "where NOMBRE LIKE '%" + data + "%' OR MARCA LIKE '%" + data + "%' OR CODIGO_BARRAS LIKE '%" + data + "%';";
             }
-            reader = systemQuerys.dataTable(pQuery);
+            reader = SystemQuerys.dataTable(pQuery);
 
             while (reader.Read())
             {

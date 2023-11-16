@@ -31,7 +31,7 @@ namespace papeSraErika
                 try {
                     int num2 = int.Parse(_stock);
                     string sql = "update productos set STOCK = STOCK + " + _stock + " where CODIGO_BARRAS = '" + _codigo + "'";
-                    systemQuerys.principalQuery(sql);
+                    SystemQuerys.principalQuery(sql);
                     DialogResult sino = MessageBox.Show("Desea agregar otro producto", "Agregar otro producto", MessageBoxButtons.YesNo);
                     if (sino == DialogResult.Yes)
                     {
@@ -41,8 +41,8 @@ namespace papeSraErika
                     }
                     else
                     {
-                        productView M = new productView();
-                        var form = new productView();
+                        ProductView M = new ProductView();
+                        var form = new ProductView();
                         form.table2();
                         this.Close();
                     }

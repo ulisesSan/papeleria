@@ -3,9 +3,9 @@ using System.Windows.Forms;
 
 namespace papeSraErika
 {
-    public partial class addProduct : Form
+    public partial class AddProduct : Form
     {
-        public addProduct()
+        public AddProduct()
         {
             InitializeComponent();
         }
@@ -20,12 +20,12 @@ namespace papeSraErika
 
         private void addBtn_Click(object sender, EventArgs e)
         {
-            string consulta = systemQuerys.principalQuery("select * from productos where CODIGO_BARRAS = '"+textCode.Text+"'");
+            string consulta = SystemQuerys.principalQuery("select * from productos where CODIGO_BARRAS = '"+textCode.Text+"'");
             if(consulta == null)
             {
                 string price;
                 string stock;
-                productMap _product = new productMap();
+                ProductMap _product = new ProductMap();
                 _product.BarCode = textCode.Text;
                 _product.ProductName = textName.Text;
                 _product.Brand1 = textMarca.Text;
@@ -48,7 +48,7 @@ namespace papeSraErika
                     {
                         string insertProduct = "INSERT INTO productos(NOMBRE,MARCA,DESCRIPCION,CODIGO_BARRAS,STOCK,PRECIO)" +
                     "values('" + _product.ProductName + "','" + _product.Brand1 + "','" + _product.Description1 + "','" + _product.BarCode + "','" + _product.Stock1 + "','" + _product.Price1 + "');";
-                        systemQuerys.principalQuery(insertProduct);
+                        SystemQuerys.principalQuery(insertProduct);
 
                         DialogResult sino = MessageBox.Show("Desea agregar otro producto", "Agregar otro producto", MessageBoxButtons.YesNo);
                         if (sino == DialogResult.Yes)
@@ -64,8 +64,8 @@ namespace papeSraErika
                         }
                         else
                         {
-                            productView M = new productView();
-                            var form = new productView();
+                            ProductView M = new ProductView();
+                            var form = new ProductView();
                             form.table2();
                             this.Close();
                         }

@@ -4,10 +4,10 @@ using System.Windows.Forms;
 
 namespace papeSraErika
 {
-    public partial class productView : Form
+    public partial class ProductView : Form
     {
         public int Inicio;
-        public productView()
+        public ProductView()
         {
             InitializeComponent();
             Table(null);
@@ -25,7 +25,7 @@ namespace papeSraErika
         public void Table(string data)
         {
             List<object> lista = new List<object>();
-            productController _products = new productController();
+            ProductController _products = new ProductController();
             productTable.DataSource = _products.Products(data);
         }
 
@@ -44,7 +44,7 @@ namespace papeSraErika
 
         private void button1_Click(object sender, EventArgs e)
         {
-            addProduct M = new addProduct();
+            AddProduct M = new AddProduct();
             M.Show();
         }
 

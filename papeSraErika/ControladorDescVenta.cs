@@ -4,7 +4,7 @@ using System.Windows.Forms;
 
 namespace papeSraErika
 {
-    class ControladorDescVenta : dataConection
+    class ControladorDescVenta : DataConection
     {
         public List<object> descVenta(string data)
         {
@@ -26,7 +26,7 @@ namespace papeSraErika
                     "from productos,descripcion_venta " +
                     "where ID_VENTA like '" + data + "' and productos.ID_PRODUCTO = ID_PRD;";
 
-                reader = systemQuerys.dataTable(shopQ);
+                reader = SystemQuerys.dataTable(shopQ);
 
                 while (reader.Read())
                 {

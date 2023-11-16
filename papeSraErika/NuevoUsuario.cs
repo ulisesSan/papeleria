@@ -26,7 +26,7 @@ namespace papeSraErika
                 string sql = "Insert into usuario (nombre, contraseña) values ('"+NameUser.Text+"', '"+password1+"') ";
                 Usuarios m = new Usuarios();
 
-                systemQuerys.principalQuery(sql);
+                SystemQuerys.principalQuery(sql);
 
                 m.Show();
 

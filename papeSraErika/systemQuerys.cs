@@ -3,13 +3,13 @@ using MySql.Data.MySqlClient;
 
 namespace papeSraErika 
 {
-    class systemQuerys : dataConection
+    class systemQuerys : DataConection
     {
         public static string principalQuery(string Query)
         {
             string read = null;
             MySqlDataReader reader;
-            MySqlConnection connection = dataConection.dataConnect();
+            MySqlConnection connection = DataConection.dataConnect();
             connection.Open();
 
             try
@@ -37,7 +37,7 @@ namespace papeSraErika
         public static MySqlDataReader dataTable(string Query)
         {
             MySqlDataReader reader;
-            MySqlConnection connection = dataConection.dataConnect();
+            MySqlConnection connection = DataConection.dataConnect();
             connection.Open();
 
             try

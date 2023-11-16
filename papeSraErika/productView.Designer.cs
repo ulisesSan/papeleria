@@ -1,7 +1,7 @@
 ﻿
 namespace papeSraErika
 {
-    partial class productView
+    partial class ProductView
     {
         /// <summary>
         /// Required designer variable.
@@ -287,7 +287,7 @@ namespace papeSraErika
             // 
             // productMapBindingSource
             // 
-            this.productMapBindingSource.DataSource = typeof(papeSraErika.productMap);
+            this.productMapBindingSource.DataSource = typeof(papeSraErika.ProductMap);
             // 
             // productView
             // 

@@ -4,7 +4,7 @@ using MySql.Data.MySqlClient;
 
 namespace papeSraErika
 {
-    class shopController : dataConection
+    class ShopController : dataConection
     {
         public List<object> shopQuery(string data)
         {
@@ -24,7 +24,7 @@ namespace papeSraErika
 
                 while (reader.Read())
                 {
-                    shopMap _shop = new shopMap();
+                    ShopMap _shop = new ShopMap();
 
                     _shop.BarCode = reader.GetString(4);
                     _shop.Name = reader.GetString(1);

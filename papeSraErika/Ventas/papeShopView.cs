@@ -20,45 +20,18 @@ namespace papeSraErika
         {
             if (e.KeyChar == (char)(13))
             {
-                addDataTable addTable = new addDataTable();
-                string resultado = "";
-                string[] itemsProcesed = (resultado = (addTable.Table(barCodeText.Text))).Split(' ');
-                lblTotal.Text = (float.Parse(lblTotal.Text) + float.Parse(itemsProcesed[itemsProcesed.Length - 1])).ToString();
-                listBox1.Items.Add(resultado);
+                AddDataTable addTable = new AddDataTable();
+                string resultado = addTable.Table(barCodeText.Text);
+                string[] itemsProcesed = resultado.Split(' ');
+                if(resultado != "")
+                {
+                    lblTotal.Text = (float.Parse(lblTotal.Text) + float.Parse(itemsProcesed[itemsProcesed.Length - 1])).ToString();
+                    listBox1.Items.Add(resultado);
+                }
                 barCodeText.Text = "";
-
-
             }
         }
-        public void Table(string data)
-        {
-            int bandera = 0;
-            string sql = "select * from productos where CODIGO_BARRAS = '" + data + "'";
-            string _list = "";
-            
-            MySqlDataReader res = systemQuerys.dataTable(sql);
-            while (res.Read())
-            {
-                if((res.GetString(5).Equals("0")))
-                {
-                    MessageBox.Show("Este producto ya no tiene stock");
-                    bandera = 1;
-                }
-                else
-                {
-                    _list += res.GetString(4) + " " + res.GetString(1) + " $ " + res.GetString(6);
-                    setTotalLabel(res.GetString(6));
-                    addListBox(_list);
-                    listBox1.SetSelected(0,true);
-                    bandera = 2;
-                }
-            }
-            if(bandera == 0)
-            {
-                MessageBox.Show("Producto no encontrado");
-            }
-        }
-
+       
         private void RealizarCompra(object sender, System.EventArgs e)
         {
             
@@ -158,20 +131,6 @@ namespace papeSraErika
             productView m = new productView();
             m.Show();
             m.Inicio = 1;
-        }
-
-        public void setTotalLabel(string total)
-        {
-            Total = total;
-            lblTotal.Text = (float.Parse(lblTotal.Text) + float.Parse(Total)).ToString();
-        }
-
-        public void addListBox(string items)
-        {
-            Items = items;
-            listBox1.Items.Add(Items);
-            listBox1.SetSelected(0, true);
-            barCodeText.Text = "";
         }
     }
 }

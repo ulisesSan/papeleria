@@ -3,7 +3,7 @@ using MySql.Data.MySqlClient;
 
 namespace papeSraErika
 {
-    class productController : dataConection
+    class ProductController : DataConection
     {
         public List<object> Products(string data)
         {
@@ -20,11 +20,11 @@ namespace papeSraErika
                 pQuery = "select * from Productos " +
                 "where NOMBRE LIKE '%" + data + "%' OR MARCA LIKE '%" + data + "%' OR CODIGO_BARRAS LIKE '%" + data + "%';";
             }
-            reader = systemQuerys.dataTable(pQuery);
+            reader = SystemQuerys.dataTable(pQuery);
 
             while (reader.Read())
             {
-                productMap _productMap = new productMap();
+                ProductMap _productMap = new ProductMap();
 
                 _productMap.BarCode = reader.GetString(4);
                 _productMap.ProductName = reader.GetString(1);

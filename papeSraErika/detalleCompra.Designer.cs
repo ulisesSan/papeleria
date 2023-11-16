@@ -1,7 +1,7 @@
 ﻿
 namespace papeSraErika
 {
-    partial class detalleCompra
+    partial class DetalleCompra
     {
         /// <summary>
         /// Required designer variable.

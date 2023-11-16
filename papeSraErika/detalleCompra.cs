@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace papeSraErika
 {
-    public partial class detalleCompra : Form
+    public partial class DetalleCompra : Form
     {
         public string codigo;
-        public detalleCompra(string _codigo)
+        public DetalleCompra(string _codigo)
         {
             InitializeComponent();
             DetalleCompra(_codigo);
