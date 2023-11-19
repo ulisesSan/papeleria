@@ -32,15 +32,15 @@ namespace papeSraErika
             this.components = new System.ComponentModel.Container();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDetalle = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.Copia = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.ventaTotal = new System.Windows.Forms.Label();
             this.DataTableVenta = new System.Windows.Forms.DataGridView();
-            this.mapCompraBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.vendedorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mapCompraBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.DataTableVenta)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mapCompraBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -75,40 +75,40 @@ namespace papeSraErika
             this.btnDetalle.UseVisualStyleBackColor = true;
             this.btnDetalle.Click += new System.EventHandler(this.btnDetalle_Click);
             // 
-            // button2
+            // Copia
             // 
-            this.button2.BackgroundImage = global::papeSraErika.Properties.Resources.amarillo;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(477, 468);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(76, 41);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Copia de seguridad";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.Copia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Copia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Copia.FlatAppearance.BorderSize = 0;
+            this.Copia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Copia.ForeColor = System.Drawing.Color.Transparent;
+            this.Copia.Location = new System.Drawing.Point(477, 468);
+            this.Copia.Name = "Copia";
+            this.Copia.Size = new System.Drawing.Size(76, 41);
+            this.Copia.TabIndex = 4;
+            this.Copia.Text = "Copia de seguridad";
+            this.Copia.UseVisualStyleBackColor = false;
+            this.Copia.Click += new System.EventHandler(this.button2_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Transparent;
             this.label1.Location = new System.Drawing.Point(862, 326);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 23);
+            this.label1.Size = new System.Drawing.Size(66, 24);
             this.label1.TabIndex = 5;
             this.label1.Text = "Total $";
             // 
             // ventaTotal
             // 
             this.ventaTotal.AutoSize = true;
-            this.ventaTotal.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ventaTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ventaTotal.ForeColor = System.Drawing.Color.Transparent;
             this.ventaTotal.Location = new System.Drawing.Point(924, 326);
             this.ventaTotal.Name = "ventaTotal";
-            this.ventaTotal.Size = new System.Drawing.Size(0, 23);
+            this.ventaTotal.Size = new System.Drawing.Size(0, 24);
             this.ventaTotal.TabIndex = 6;
             // 
             // DataTableVenta
@@ -130,10 +130,6 @@ namespace papeSraErika
             this.DataTableVenta.RowHeadersVisible = false;
             this.DataTableVenta.Size = new System.Drawing.Size(604, 198);
             this.DataTableVenta.TabIndex = 7;
-            // 
-            // mapCompraBindingSource
-            // 
-            this.mapCompraBindingSource.DataSource = typeof(papeSraErika.MapCompra);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -166,6 +162,10 @@ namespace papeSraErika
             this.dataGridViewTextBoxColumn3.ReadOnly = true;
             this.dataGridViewTextBoxColumn3.Width = 150;
             // 
+            // mapCompraBindingSource
+            // 
+            this.mapCompraBindingSource.DataSource = typeof(papeSraErika.MapCompra);
+            // 
             // Compras
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -175,7 +175,7 @@ namespace papeSraErika
             this.Controls.Add(this.DataTableVenta);
             this.Controls.Add(this.ventaTotal);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.Copia);
             this.Controls.Add(this.btnDetalle);
             this.Controls.Add(this.btnUpdate);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -191,7 +191,7 @@ namespace papeSraErika
         #endregion
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnDetalle;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button Copia;
         private System.Windows.Forms.DataGridViewTextBoxColumn idventaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn fechaventaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn totalDataGridViewTextBoxColumn;

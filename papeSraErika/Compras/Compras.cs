@@ -1,7 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;
+
 
 namespace papeSraErika
 {
@@ -16,7 +15,7 @@ namespace papeSraErika
         {
             string datoTotal=null;
             string fecha = DateTime.Now.ToString("yyy-MM-dd");
-            List<object> lista = new List<object>();
+            //List<object> lista = new List<object>();
             CompraControlador _ventas = new CompraControlador();
             DataTableVenta.DataSource = _ventas.Venta(Data);
             datoTotal = SystemQuerys.principalQuery("select sum(TOTAL) from ventas where FECHA ='" + fecha + "'");
@@ -39,38 +38,21 @@ namespace papeSraErika
 
         private void btnDetalle_Click(object sender, EventArgs e)
         {
-            if(DataTableVenta.Rows.Count == 0)
+            if(DataTableVenta.Rows.Count != 0)
             {
                 DetalleCompra M = new DetalleCompra(DataTableVenta.CurrentRow.Cells[0].Value.ToString());
                 M.codigo = DataTableVenta.CurrentRow.Cells[0].ToString();
                 M.Show();
+            }
+            else{
+                MessageBox.Show("Aún no hay ventas.");
             }
                 
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            copia();
+            SystemQuerys.Copia();
         }
-
-       private void copia()
-       {
-            string constring = "server=localhost;user=root;pwd=root;database=papeleria;";
-            string file = "C:\\Copias\\Backup.sql";
-            using (MySqlConnection conn = new MySqlConnection(constring))
-            {
-                using (MySqlCommand cmd = new MySqlCommand())
-                {
-                    using (MySqlBackup mb = new MySqlBackup(cmd))
-                    {
-                        cmd.Connection = conn;
-                        conn.Open();
-                        mb.ExportToFile(file);
-                        conn.Close();
-                    }
-                }
-            }
-       }
-
     }
 }
