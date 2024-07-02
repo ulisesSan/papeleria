@@ -202,8 +202,6 @@ D:\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.NuevoUsuario.resource
 D:\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.Usuarios.resources
 C:\Users\Ulises Caceres\Documents\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.NuevoUsuario.resources
 C:\Users\Ulises Caceres\Documents\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.Usuarios.resources
-D:\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.csproj.SuggestedBindingRedirects.cache
-D:\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.csproj.CopyComplete
 D:\Git\sraEricaPape\papeSraErika\bin\Debug\papeSraErika.exe.config
 D:\Git\sraEricaPape\papeSraErika\bin\Debug\papeSraErika.exe
 D:\Git\sraEricaPape\papeSraErika\bin\Debug\papeSraErika.pdb
@@ -385,3 +383,8 @@ C:\Users\Ulises\Documents\git\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.c
 C:\Users\Ulises\Documents\git\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.csproj.CopyComplete
 C:\Users\Ulises\Documents\git\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.exe
 C:\Users\Ulises\Documents\git\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.pdb
+D:\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraE.AC9A4D4B.Up2Date
+D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\papeSraErika.exe.manifest
+D:\GitHub\sraEricaPape\papeSraErika\bin\Debug\papeSraErika.application
+D:\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.exe.manifest
+D:\GitHub\sraEricaPape\papeSraErika\obj\Debug\papeSraErika.application
