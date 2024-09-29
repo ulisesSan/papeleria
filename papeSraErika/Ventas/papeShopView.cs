@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;
 using papeSraErika.Ventas;
 
 namespace papeSraErika
@@ -56,7 +55,7 @@ namespace papeSraErika
                         string[] codigo = curItem.Split(' ');
                         string last = codigo[codigo.Length - 1];
                         id_venta = int.Parse(SystemQuerys.principalQuery("select max(id) from ventas"));
-                        id_prod = int.Parse(SystemQuerys.principalQuery("select ID_PRODUCTO from productos where CODIGO_BARRAS = '" + codigo[0] + "'"));
+                         id_prod = int.Parse(SystemQuerys.principalQuery("select ID_PRODUCTO from productos where CODIGO_BARRAS = '" + codigo[0] + "'"));
                         SystemQuerys.principalQuery("insert into descripcion_venta(ID_PRD,ID_VENTA,CANTIDAD,SUBTOTAL)" +
                             " values('" + id_prod + "','" + id_venta + "',1,'" + float.Parse(last) + "')");
                         SystemQuerys.principalQuery("update productos set STOCK = STOCK - '1' where CODIGO_BARRAS='" + codigo[0] + "'");

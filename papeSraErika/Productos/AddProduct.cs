@@ -24,21 +24,21 @@ namespace papeSraErika
             if(consulta == null)
             {
                 string price;
-                string stock;
+                int stock;
                 ProductMap _product = new ProductMap();
                 _product.BarCode = textCode.Text;
                 _product.ProductName = textName.Text;
-                _product.Brand1 = textMarca.Text;
-                _product.Description1 = textDescription.Text;
+                _product.Brand = textMarca.Text;
+                _product.Description = textDescription.Text;
 
                 try
                 {
                     int stock2 = int.Parse(textStock.Text);
                     float price2 = float.Parse(textPrecio.Text);
                     price = textPrecio.Text;
-                    stock = textStock.Text;
-                    _product.Price1 = price.ToString();
-                    _product.Stock1 = stock.ToString();
+                    stock = Int32.Parse(textStock.Text);
+                    _product.Price = price.ToString();
+                    _product.Stock = Int32.Parse(stock.ToString());
 
                     if (_product.BarCode.Length >= 14)
                     {
@@ -47,7 +47,7 @@ namespace papeSraErika
                     else
                     {
                         string insertProduct = "INSERT INTO productos(NOMBRE,MARCA,DESCRIPCION,CODIGO_BARRAS,STOCK,PRECIO)" +
-                    "values('" + _product.ProductName + "','" + _product.Brand1 + "','" + _product.Description1 + "','" + _product.BarCode + "','" + _product.Stock1 + "','" + _product.Price1 + "');";
+                    "values('" + _product.ProductName + "','" + _product.Brand + "','" + _product.Description + "','" + _product.BarCode + "','" + _product.Stock + "','" + _product.Price + "');";
                         SystemQuerys.principalQuery(insertProduct);
 
                         DialogResult sino = MessageBox.Show("Desea agregar otro producto", "Agregar otro producto", MessageBoxButtons.YesNo);

@@ -1,25 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace papeSraErika
 {
     class ProductMap
     {
         private string barCode;
         private string productName;
-        private string Brand;
-        private string Description;
-        private string Price;
-        private string Stock;
+        private string _brand;
+        private string brand;
+        private string description;
+        private string _description;
+        private string price;
+        private string _price;
+        private int stock;
+        private int _stock;
 
         public string BarCode { get => barCode; set => barCode = value; }
         public string ProductName { get => productName; set => productName = value; }
-        public string Brand1 { get => Brand; set => Brand = value; }
-        public string Description1 { get => Description; set => Description = value; }
-        public string Price1 { get => Price; set => Price = value; }
-        public string Stock1 { get => Stock; set => Stock = value; }
+        public string Brand { get => Brand; set => _brand = value; }
+        public string Description { get => Description; set => _description = value; }
+        public string Price { get => Price; set => _price = value; }
+        public int Stock { get => Stock; set => _stock = value; }
     }
 }

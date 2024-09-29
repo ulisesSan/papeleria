@@ -28,10 +28,10 @@ namespace papeSraErika
 
                 _productMap.BarCode = reader.GetString(4);
                 _productMap.ProductName = reader.GetString(1);
-                _productMap.Brand1 = reader.GetString(2);
-                _productMap.Description1 = reader.GetString(3);
-                _productMap.Stock1 = reader.GetString(5);
-                _productMap.Price1 = reader.GetString(6);
+                _productMap.Brand = reader.GetString(2);
+                _productMap.Description = reader.GetString(3);
+                _productMap.Stock = reader.GetInt32(5);
+                _productMap.Price = reader.GetString(6);
                 _list.Add(_productMap);
             }
 

@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Ulises Caceres\\Documents\\GitHub\\papeleria\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E8688B59-272C-4A93-9BD6-92C579256589}|papeSraErika\\Papeleria.csproj|c:\\users\\ulises caceres\\documents\\github\\papeleria\\papesraerika\\productos\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8688B59-272C-4A93-9BD6-92C579256589}|papeSraErika\\Papeleria.csproj|solutionrelative:papesraerika\\productos\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E8688B59-272C-4A93-9BD6-92C579256589}|papeSraErika\\Papeleria.csproj|c:\\users\\ulises caceres\\documents\\github\\papeleria\\papesraerika\\productos\\productmap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E8688B59-272C-4A93-9BD6-92C579256589}|papeSraErika\\Papeleria.csproj|solutionrelative:papesraerika\\productos\\productmap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E8688B59-272C-4A93-9BD6-92C579256589}|papeSraErika\\Papeleria.csproj|c:\\users\\ulises caceres\\documents\\github\\papeleria\\papesraerika\\productos\\addproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E8688B59-272C-4A93-9BD6-92C579256589}|papeSraErika\\Papeleria.csproj|solutionrelative:papesraerika\\productos\\addproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8688B59-272C-4A93-9BD6-92C579256589}|papeSraErika\\Papeleria.csproj|c:\\users\\ulises caceres\\documents\\github\\papeleria\\papesraerika\\productos\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8688B59-272C-4A93-9BD6-92C579256589}|papeSraErika\\Papeleria.csproj|solutionrelative:papesraerika\\productos\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E8688B59-272C-4A93-9BD6-92C579256589}|papeSraErika\\Papeleria.csproj|c:\\users\\ulises caceres\\documents\\github\\papeleria\\papesraerika\\compras\\compras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -38,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,20 +58,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "ProductController.cs",
               "DocumentMoniker": "C:\\Users\\Ulises Caceres\\Documents\\GitHub\\papeleria\\papeSraErika\\Productos\\ProductController.cs",
               "RelativeDocumentMoniker": "papeSraErika\\Productos\\ProductController.cs",
               "ToolTip": "C:\\Users\\Ulises Caceres\\Documents\\GitHub\\papeleria\\papeSraErika\\Productos\\ProductController.cs",
               "RelativeToolTip": "papeSraErika\\Productos\\ProductController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAuwCEAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAuwB4AAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-29T22:48:06.726Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "AddProduct.cs",
               "DocumentMoniker": "C:\\Users\\Ulises Caceres\\Documents\\GitHub\\papeleria\\papeSraErika\\Productos\\AddProduct.cs",
               "RelativeDocumentMoniker": "papeSraErika\\Productos\\AddProduct.cs",
@@ -84,12 +84,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "ProductMap.cs",
               "DocumentMoniker": "C:\\Users\\Ulises Caceres\\Documents\\GitHub\\papeleria\\papeSraErika\\Productos\\ProductMap.cs",
               "RelativeDocumentMoniker": "papeSraErika\\Productos\\ProductMap.cs",
-              "ToolTip": "C:\\Users\\Ulises Caceres\\Documents\\GitHub\\papeleria\\papeSraErika\\Productos\\ProductMap.cs",
-              "RelativeToolTip": "papeSraErika\\Productos\\ProductMap.cs",
+              "ToolTip": "C:\\Users\\Ulises Caceres\\Documents\\GitHub\\papeleria\\papeSraErika\\Productos\\ProductMap.cs*",
+              "RelativeToolTip": "papeSraErika\\Productos\\ProductMap.cs*",
               "ViewState": "AgIAAAAAAAAAAAAAACBlwAsAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-29T22:45:26.929Z",
@@ -103,7 +103,7 @@
               "RelativeDocumentMoniker": "papeSraErika\\Productos\\ProductView.cs",
               "ToolTip": "C:\\Users\\Ulises Caceres\\Documents\\GitHub\\papeleria\\papeSraErika\\Productos\\ProductView.cs",
               "RelativeToolTip": "papeSraErika\\Productos\\ProductView.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAEwBEAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-29T22:34:15.321Z",
               "EditorCaption": ""
